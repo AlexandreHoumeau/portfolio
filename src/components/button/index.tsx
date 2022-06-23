@@ -11,11 +11,14 @@ export const Button: React.FC<IButton> = ({
   ...rest
 }) => {
   return (
-    <button
-      className={`py-2 px-4 rounded-full bg-green-500 hover:bg-green-600 focus:outline-none ring-opacity-75 ring-green-400 focus:ring text-white text-lg ${className}`}
-      {...rest}
-    >
-      {children}
-    </button>
+    <div className="relative z-10 -rotate-2">
+      <button
+        className={`w-[200px] h-[50px] active:translate-x-1 active:translate-y-1 relative text-black rounded z-50 border-black border-2 text-2xl font-Courier ${className}`}
+        {...rest}
+      >
+        {children}
+      </button>
+      <div className="bg-black absolute w-[200px] z-10 h-[50px] top-1 -right-1 rounded" />
+    </div>
   );
 };

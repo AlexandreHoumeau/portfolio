@@ -11,14 +11,17 @@ export const IconButton: FC<IButton> = ({
   ...rest
 }) => {
   return (
-    <button
-      className={`
-        rounded-full font-Constructio active:border-b-2 active:border-r-2 border-b-4 border-r-4 z-10 border-2 border-black h-[54px] w-[54px] flex justify-center items-center
+    <div className="relative z-50">
+      <button
+        className={`
+        rounded-full z-50 relative font-Constructio active:translate-x-1 active:translate-y-1 border-2 border-black md:h-[54px] md:w-[54px] h-[27px] w-[27px] p-1 flex justify-center items-center
         ${className}
       `}
-      {...rest}
-    >
-      {children}
-    </button>
+        {...rest}
+      >
+        {children}
+      </button>
+      <div className="bg-black absolute md:h-[54px] md:w-[54px] h-[27px] w-[27px] z-10 top-1 -right-1 rounded-full" />
+    </div>
   );
 };
