@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Constructio': ['ConstructioGrotesk-Regular']
+        'Constructio': ['ConstructioGrotesk-Regular'],
+        'Courier': ['courier-std']
       }
     },
   },

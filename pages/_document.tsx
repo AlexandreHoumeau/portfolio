@@ -1,4 +1,11 @@
-import Document, { DocumentContext, DocumentInitialProps } from "next/document";
+import Document, {
+  DocumentContext,
+  Head,
+  DocumentInitialProps,
+  Html,
+  Main,
+  NextScript,
+} from "next/document";
 
 class CustomDocument extends Document {
   static async getInitialProps(
@@ -7,6 +14,21 @@ class CustomDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx);
 
     return initialProps;
+  }
+
+  render(): JSX.Element {
+    return (
+      <Html>
+        <Head>
+        <link rel="stylesheet" href="https://use.typekit.net/blj1kuk.css"/>
+        </Head>
+
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }
 
