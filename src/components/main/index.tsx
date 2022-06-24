@@ -29,7 +29,7 @@ export const Main: FC = () => {
 
       <div className="flex flex-1  justify-center">
         <div className=" flex relative items-end">
-          <div className="absolute z-10 rotate-2 w-1/6 top-40 right-20">
+          <div className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-20 right-5 sm:right-20">
             <Image className="" src={clouds} />
           </div>
           <div className="absolute w-1/6 bottom-56 md:bottom-40 left-10 md:-left-10">
