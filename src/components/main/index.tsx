@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { FC } from "react";
 import photo_of_me from "public/images/moi1.png";
+import clouds from "public/images/clouds.png";
 import { Button } from "..";
 import { Arrow1Icon } from "@components/icons";
 
@@ -26,8 +27,14 @@ export const Main: FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-1 justify-center">
-        <div className=" flex items-end">
+      <div className="flex flex-1  justify-center">
+        <div className=" flex relative items-end">
+          <div className="absolute z-10 rotate-2 w-1/6 top-40 right-20">
+            <Image className="" src={clouds} />
+          </div>
+          <div className="absolute w-1/6 bottom-56 md:bottom-40 left-10 md:-left-10">
+            <Image className="" src={clouds} />
+          </div>
           <Image
             className=""
             quality={100}
