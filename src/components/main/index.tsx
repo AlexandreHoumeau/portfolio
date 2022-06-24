@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import photo_of_me from "public/images/moi1.png";
 import clouds from "public/images/clouds.png";
 import { Button } from "..";
-import { Arrow1Icon } from "@components/icons";
+import { Arrow1Icon, StarIcon } from "@components/icons";
 
 export const Main: FC = () => {
   return (
@@ -29,11 +29,26 @@ export const Main: FC = () => {
 
       <div className="flex flex-1  justify-center">
         <div className=" flex relative items-end">
-          <div className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-20 right-5 sm:right-20">
-            <Image className="" src={clouds} />
+          <div className="absolute z-10 w-10 sm:top-40 top-0 left-5 sm:left-20">
+            <StarIcon className="fill-white" />
           </div>
-          <div className="absolute w-1/6 bottom-56 md:bottom-40 left-10 md:-left-10">
-            <Image className="" src={clouds} />
+          <div className="absolute z-10 w-6 sm:top-48 top-12 left-2  sm:left-5 ">
+            <StarIcon className="fill-white" />
+          </div>
+          <div className="absolute z-10 w-6 top-[50%] right-5 sm:right-10">
+            <StarIcon className="fill-white" />
+          </div>
+          <div
+            id="clouds"
+            className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-20 right-5 sm:right-20"
+          >
+            <Image src={clouds} />
+          </div>
+          <div
+            id="clouds2"
+            className="absolute w-1/6 bottom-56 md:bottom-40 left-10 md:-left-10"
+          >
+            <Image src={clouds} />
           </div>
           <Image
             className=""
