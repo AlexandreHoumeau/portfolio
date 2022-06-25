@@ -10,7 +10,7 @@ export const Main: FC = () => {
     <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
       <div className="flex justify-center md:text-right text-center items-center">
         <div className="mt-20">
-          <div className="xl:text-7xl md:text-5xl text-3xl font-Constructio mb-10">
+          <div className="xl:text-7xl md:text-5xl text-3xl font-Constructio font-Abril mb-10">
             Hi! I’m Alex,
             <br /> a web developer
           </div>
@@ -29,11 +29,11 @@ export const Main: FC = () => {
 
       <div className="flex flex-1  justify-center">
         <div className=" flex relative items-end">
-          <div className="absolute z-10 w-10 sm:top-40 top-0 left-5 sm:left-20">
-            <StarIcon className="fill-white" />
+          <div className="absolute z-10 w-10 sm:top-72 top-0 left-5 sm:left-48">
+            <StarIcon className="fill-white animate-pulse" />
           </div>
-          <div className="absolute z-10 w-6 sm:top-48 top-12 left-2  sm:left-5 ">
-            <StarIcon className="fill-white" />
+          <div className="absolute z-10 w-6 sm:top-80 top-12 left-2  sm:left-56 ">
+            <StarIcon className="fill-white animate-pulse delay-75" />
           </div>
           <div className="absolute z-10 w-6 top-[50%] right-5 sm:right-10">
             <StarIcon className="fill-white" />

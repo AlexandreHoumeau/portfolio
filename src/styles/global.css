@@ -12,6 +12,10 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@font-face {
+  font-family: 'Constructio';
+  src: url('../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.ttf');
+}
 
 #clouds {
   /* animation-name: bounce;

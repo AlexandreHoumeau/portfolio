@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'Constructio': ['ConstructioGrotesk-Regular'],
-        'Courier': ['courier-std']
+        'Courier': ['courier-std'],
+        'Abril': ['Abril Fatface']
       }
     },
   },
