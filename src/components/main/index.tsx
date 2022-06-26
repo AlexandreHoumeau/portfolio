@@ -10,7 +10,10 @@ export const Main: FC = () => {
     <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
       <div className="flex justify-center md:text-right text-center items-center">
         <div className="mt-20">
-          <div style={{ fontFamily: 'Constructio'}} className="xl:text-7xl md:text-5xl text-3xl mb-10">
+          <div
+            style={{ fontFamily: "Constructio" }}
+            className="xl:text-7xl md:text-5xl text-3xl mb-10"
+          >
             Hi! I’m Alex,
             <br /> a web developer
           </div>
@@ -27,31 +30,31 @@ export const Main: FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-1  justify-center">
-        <div className=" flex relative items-end">
-          <div className="absolute z-10 w-10 sm:top-72 top-0 left-5 sm:left-48">
-            <StarIcon className="fill-white animate-pulse" />
-          </div>
-          <div className="absolute z-10 w-6 sm:top-80 top-12 left-2  sm:left-56 ">
-            <StarIcon className="fill-white animate-pulse delay-75" />
-          </div>
-          <div className="absolute z-10 w-6 top-[50%] right-5 sm:right-10">
-            <StarIcon className="fill-white" />
-          </div>
-          <div
-            id="clouds"
-            className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-20 right-5 sm:right-20"
-          >
-            <Image src={clouds} />
-          </div>
-          <div
-            id="clouds2"
-            className="absolute w-1/6 bottom-56 md:bottom-40 left-10 md:-left-10"
-          >
-            <Image src={clouds} />
-          </div>
+      <div className="flex flex-1 relative justify-center">
+        <div className="absolute z-10 w-10 sm:top-72 top-0 left-5 sm:left-48">
+          <StarIcon className="fill-white animate-pulse" />
+        </div>
+        <div className="absolute z-10 w-6 sm:top-80 top-12 left-2  sm:left-56 ">
+          <StarIcon className="fill-white animate-pulse delay-75" />
+        </div>
+        <div className="absolute z-10 w-6 top-[50%] right-5 sm:right-10">
+          <StarIcon className="fill-white" />
+        </div>
+        <div
+          id="clouds"
+          className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-20 right-5 sm:right-20"
+        >
+          <Image src={clouds} />
+        </div>
+        <div
+          id="clouds2"
+          className="absolute w-1/6 bottom-56 md:bottom-40 left-10 md:-left-10"
+        >
+          <Image src={clouds} />
+        </div>
+
+        <div className=" flex lg:mx-0 md:mx-48 sm:mx-0 items-end">
           <Image
-            className=""
             quality={100}
             width={800}
             height={800}
