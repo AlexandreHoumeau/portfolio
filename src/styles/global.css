@@ -14,7 +14,10 @@ body {
 
 @font-face {
   font-family: 'Constructio';
-  src: url('../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.ttf');
+  font-weight: normal;
+  font-size: normal;
+  src: url('../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.ttf') format('truetype');
+  src: url('../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.otf');
 }
 
 #clouds {

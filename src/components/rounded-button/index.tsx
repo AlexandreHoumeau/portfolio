@@ -13,7 +13,8 @@ export const RoundedButton: FC<IButton> = ({
   return (
     <div className="relative z-10">
       <button
-        className={`rounded-full relative bg-white font-Constructio font-Abril active:translate-x-1 active:translate-y-1 z-50 border-2 border-black md:h-[54px] h-[27px] md:w-[200px] w-[100px] ${className}`}
+        style={{ fontFamily: 'Constructio'}}
+        className={`rounded-full relative bg-white font-Constructio active:translate-x-1 active:translate-y-1 z-50 border-2 border-black md:h-[54px] h-[27px] md:w-[200px] w-[100px] ${className}`}
         {...rest}
       >
         {children}

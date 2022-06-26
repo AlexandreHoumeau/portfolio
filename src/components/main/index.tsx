@@ -10,7 +10,7 @@ export const Main: FC = () => {
     <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
       <div className="flex justify-center md:text-right text-center items-center">
         <div className="mt-20">
-          <div className="xl:text-7xl md:text-5xl text-3xl font-Constructio font-Abril mb-10">
+          <div style={{ fontFamily: 'Constructio'}} className="xl:text-7xl md:text-5xl text-3xl mb-10">
             Hi! I’m Alex,
             <br /> a web developer
           </div>
