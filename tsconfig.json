@@ -25,6 +25,12 @@
       "@components": [
         "src/components"
       ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@layouts": [
+        "src/layouts"
+      ],
       "@public/*": [
         "public/*"
       ],
