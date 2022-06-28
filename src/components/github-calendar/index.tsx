@@ -1,7 +1,7 @@
 import { Arrow1Icon } from "@components/icons";
 import classNames from "classnames";
-import React, { FC, useState } from "react";
-import { useEffect } from "react";
+import { FC, useEffect, useState } from "react";
+import { isMobile } from 'react-device-detect';
 
 interface ContributionsType {
   contributionCalendar: {
@@ -54,6 +54,7 @@ export const GithubCalendar: FC<PropType> = ({
   };
 
   useEffect(() => {
+    if (isMobile) return
     if (enlarge) {
       setWeeks(
         contributions?.contributionCalendar?.weeks?.slice(
