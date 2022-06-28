@@ -3,11 +3,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        betterhover: { raw: "(hover: hover)" },
+      },
       fontFamily: {
-        'Constructio': ['ConstructioGrotesk-Regular'],
-        'Courier': ['courier-std'],
-        'Abril': ['Abril Fatface']
-      }
+        Constructio: ["ConstructioGrotesk-Regular"],
+        Courier: ["courier-std"],
+        Abril: ["Abril Fatface"],
+      },
     },
   },
   variants: {
