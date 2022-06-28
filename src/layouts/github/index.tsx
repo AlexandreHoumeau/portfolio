@@ -1,31 +1,76 @@
 import { Button } from "@components/button";
 import { GithubCalendar } from "@components/github-calendar";
-import React, { FC } from "react";
+import classNames from "classnames";
+import React, { FC, useState } from "react";
 
-export const Github: FC = ({ contributions }) => {
+interface PropType {
+  contributions: {
+    contributionCalendar: {
+      totalContributions: string,
+      weeks: [
+        {
+          firstDay: String;
+          contributionDays: [{
+            contributionLevel: String,
+            date: number
+          }];
+        }
+      ];
+    }
+  };
+}
+
+
+export const Github: FC<PropType> = ({ contributions }) => {
+  const [update, setUpdate] = useState(false);
+
+  const changeSize = (size: boolean) => {
+    setUpdate(size);
+  };
+
   return (
-    <div className="bg-orange-100 grid grid-cols-2 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
+    <div
+      className={classNames(
+        " xl:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]",
+        update ? "bg-purple-300" : "bg-orange-100"
+      )}
+    >
       <div className="justify-center flex items-center">
-        <div className="space-y-8">
-          <div style={{ fontFamily: "Constructio" }} className="text-4xl">
+        <div
+          className={classNames(
+            "space-y-8",
+            update ? "opacity-20" : "opacity-100"
+          )}
+        >
+          <div
+            style={{ fontFamily: "Constructio" }}
+            className="md:text-5xl xl:text-left text-center text-3xl"
+          >
             Check my contributions
             <br /> over the year
           </div>
 
-          <div className="font-Courier text-2xl">
-            Thanks to the Github api I can show
+          <div className="font-Courier xl:text-left text-center text-base md:text-2xl">
+            Thanks to the Github GraphQL api I can show
             <br /> you my commits over the past year.
           </div>
-          <div className="rotate-2 flex">
+          <div className="rotate-2 flex xl:justify-start justify-center">
             <Button className="bg-amber-300">My Github</Button>
           </div>
         </div>
       </div>
 
-      <div className="justify-center flex items-center">
-        <GithubCalendar contributions={contributions} />
+      <div className="justify-center xl:mt-0 mt-20 flex items-center">
+        <div className="space-y-2">
+          <GithubCalendar
+            contributions={contributions}
+            totalContributions={
+              contributions?.contributionCalendar?.totalContributions
+            }
+            changeSize={changeSize}
+          />
+        </div>
       </div>
     </div>
   );
 };
-
