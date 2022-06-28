@@ -3,9 +3,27 @@ import React from "react";
 import { Container, Header } from "@components";
 import { Github, Main } from "@layouts";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
-import { sub } from "date-fns";
 
-const Home: React.FC = ({ contributions }) => {
+interface PropType {
+  contributions: {
+    contributionCalendar: {
+      totalContributions: string;
+      weeks: [
+        {
+          firstDay: String;
+          contributionDays: [
+            {
+              contributionLevel: String;
+              date: number;
+            }
+          ];
+        }
+      ];
+    };
+  };
+}
+
+const Home: React.FC<PropType> = ({ contributions }) => {
   return (
     <Container>
       <div className="sticky z-50 w-full top-0">
@@ -18,19 +36,16 @@ const Home: React.FC = ({ contributions }) => {
 };
 
 export async function getStaticProps() {
+  const { GITHUB_API_KEY }  = process.env
   const client = new ApolloClient({
     uri: "https://api.github.com/graphql",
     cache: new InMemoryCache(),
   });
 
-  const from = sub(Date.now(), { months: 6 }).toISOString()
-  const to = new Date().toISOString()
-  console.log(``)
-
   const { data } = await client.query({
     context: {
       headers: {
-        Authorization: "Bearer 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",
+        Authorization: `Bearer ${GITHUB_API_KEY}`,
       },
     },
     query: gql`
