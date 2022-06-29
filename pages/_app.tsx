@@ -1,10 +1,8 @@
-import React from "react";
-import { AppProps } from "next/app";
-import "tailwindcss/tailwind.css";
 import "@styles/global.css";
-import { RecoilRoot } from "recoil";
-import { appWithTranslation } from "@i18n";
+import { AppProps } from "next/app";
 import Head from "next/head";
+import { RecoilRoot } from "recoil";
+import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (

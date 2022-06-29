@@ -29,7 +29,7 @@ class CustomDocument extends Document {
           />
         </Head>
 
-        <body>
+        <body className="scroll-smooth">
           <Main />
           <NextScript />
         </body>

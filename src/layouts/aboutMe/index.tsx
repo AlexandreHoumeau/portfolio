@@ -1,11 +1,25 @@
+import { PaintBrushIcon } from "@components/icons";
 import Image from "next/image";
 import mockup_desktop_me from "public/images/mockup_desktop_me.png";
 import { FC } from "react";
+import clouds from "public/images/clouds.png";
 
 export const AboutMe: FC = () => {
   return (
-    <div className="bg-fuchsia-300 lg:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
-      <div className="justify-center flex items-center">
+    <div className=" lg:grid border-y-4 border-black grid-cols-2 z-10 flex flex-col justify-center items-center transition-all duration-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
+      <div className="justify-center transition-all duration-150 lg:p-0 p-2 md:border-r-4 border-black h-full relative flex items-center">
+        <div
+          id="clouds"
+          className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-0  right-5 sm:right-20"
+        >
+          <Image src={clouds} />
+        </div>
+        <div
+          id="clouds2"
+          className="absolute z-10 w-1/12 sm:bottom-40 bottom-0  left-1 sm:left-5"
+        >
+          <Image src={clouds} />
+        </div>
         <div className="space-y-8 w-4/5">
           <div
             style={{ fontFamily: "Constructio" }}
@@ -29,7 +43,7 @@ export const AboutMe: FC = () => {
         </div>
       </div>
 
-      <div className="justify-center  px-10 lg:mt-0 mt-10 flex items-center">
+      <div className="bg-fuchsia-300 justify-center px-10 lg:mt-0 mt-10 flex items-center transition-all duration-150 h-full ">
         <Image src={mockup_desktop_me} />
       </div>
     </div>

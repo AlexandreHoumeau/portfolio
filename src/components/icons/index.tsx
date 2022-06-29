@@ -8,3 +8,4 @@ export { default as SunIcon } from "./SunIcon";
 export { default as MoonIcon } from "./MoonIcon";
 export { default as Arrow1Icon } from "./arrow1";
 export { default as StarIcon } from "./Start"
+export { default as PaintBrushIcon } from "./paint-brush"
