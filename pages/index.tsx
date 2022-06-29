@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Header } from "@components";
-import { Github, Main } from "@layouts";
+import { AboutMe, Github, Main } from "@layouts";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 interface PropType {
@@ -30,6 +30,7 @@ const Home: React.FC<PropType> = ({ contributions }) => {
         <Header />
       </div>
       <Main />
+      <AboutMe />
       <Github contributions={contributions} />
     </Container>
   );
