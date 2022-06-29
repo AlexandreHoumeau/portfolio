@@ -31,7 +31,7 @@ export const Github: FC<PropType> = ({ contributions }) => {
   return (
     <div
       className={classNames(
-        " xl:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]",
+        "xl:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]",
         update ? "bg-purple-300" : "bg-orange-100"
       )}
     >
