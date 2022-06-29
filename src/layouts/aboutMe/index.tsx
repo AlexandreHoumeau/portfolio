@@ -13,7 +13,7 @@ export const AboutMe: FC = () => {
           >
             I’m Alex
           </div>
-          <div className="font-Courier space-y-4 lg:text-left text-center text-xs md:text-xl">
+          <div className="font-Courier space-y-4 lg:text-left text-center text-base md:text-xl">
             <div>
               and I’m a 25 years old web developer living in Paris. I’m actually
               from Bordeaux, a small city in the south west of France, well
