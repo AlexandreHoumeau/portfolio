@@ -33,7 +33,7 @@ export const AboutMe: FC = () => {
               from Bordeaux, a small city in the south west of France, well
               known for its wine but I’m sure you know all about that.
             </div>
-            <div>
+            <div className="sm:block hidden">
               Before falling in love with web development I was in a sound
               engineer school ! I used to play instruments and compose music
               with dedicated softwares. I then tried to understand how those
