@@ -7,7 +7,7 @@ import { Arrow1Icon, StarIcon } from "@components/icons";
 
 export const Main: FC = () => {
   return (
-    <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
+    <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 h-[100vh]">
       <div className="flex justify-center md:text-right text-center items-center">
         <div className="mt-20">
           <div
