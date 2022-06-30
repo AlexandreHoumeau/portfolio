@@ -7,5 +7,9 @@ export { default as YoutubeIcon } from "./YoutubeIcon";
 export { default as SunIcon } from "./SunIcon";
 export { default as MoonIcon } from "./MoonIcon";
 export { default as Arrow1Icon } from "./arrow1";
-export { default as StarIcon } from "./Start"
-export { default as PaintBrushIcon } from "./paint-brush"
+export { default as StarIcon } from "./Start";
+export { default as PaintBrushIcon } from "./paint-brush";
+export { default as CurvedLine } from "./curved-line";
+export { default as HtmlIcon } from "./htmlIcon";
+export { default as CssIcon } from "./cssIcon";
+export { default as MeIcon } from "./meIcon";

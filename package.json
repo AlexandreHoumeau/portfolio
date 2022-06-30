@@ -12,6 +12,7 @@
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@next/bundle-analyzer": "^10.0.5",
+    "@react-spring/parallax": "^9.4.5",
     "axios": "^0.21.1",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",

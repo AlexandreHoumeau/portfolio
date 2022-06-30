@@ -1,12 +1,13 @@
-import { PaintBrushIcon } from "@components/icons";
+import { CssIcon, HtmlIcon, MeIcon } from "@components/icons";
+import { ParallaxLayer } from "@react-spring/parallax";
 import Image from "next/image";
+import clouds from "public/images/clouds.png";
 import mockup_desktop_me from "public/images/mockup_desktop_me.png";
 import { FC } from "react";
-import clouds from "public/images/clouds.png";
 
 export const AboutMe: FC = () => {
   return (
-    <div className=" lg:grid border-y-4 border-black grid-cols-2 z-10 flex flex-col justify-center items-center transition-all duration-300 h-[calc(100vh_-_72px)] sm:h-[calc(100vh_-_102px)]">
+    <div className=" lg:grid border-y-4 border-black grid-cols-2 z-10 flex flex-col justify-center items-center transition-all duration-300 h-[100vh]">
       <div className="justify-center transition-all duration-150 lg:p-0 p-2 md:border-r-4 border-black h-full relative flex items-center">
         <div
           id="clouds"
@@ -43,8 +44,26 @@ export const AboutMe: FC = () => {
         </div>
       </div>
 
-      <div className="bg-fuchsia-300 justify-center px-10 lg:mt-0 mt-10 flex items-center transition-all duration-150 h-full ">
-        <Image src={mockup_desktop_me} />
+      <div className="bg-fuchsia-300 justify-center relative px-10 lg:mt-0 mt-10 flex items-center transition-all duration-150 h-full ">
+        <ParallaxLayer offset={0.3} speed={0.08} className="z-50 absolute rotate-12">
+          <CssIcon
+            className="md:scale-[1.2] absolute left-20 -top-20 -rotate-3"
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0.8} speed={0.2} className="z-50 absolute rotate-12">
+          <HtmlIcon  className="absolute md:scale-150 right-20 rotate-6 " />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0.98} speed={0.3} className="z-50 absolute -bottom-10">
+          <MeIcon
+            className="md:scale-[2] absolute left-20  rotate-[30deg]"
+          />
+        </ParallaxLayer>
+        <div className="relative z-10">
+            <Image className="z-10" src={mockup_desktop_me} />
+          <div className="absolute w-full h-full top-1 left-2 z-0 rounded-lg bg-black" />
+        </div>
       </div>
     </div>
   );

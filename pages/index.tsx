@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Header } from "@components";
 import { AboutMe, Github, Main } from "@layouts";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 interface PropType {
   contributions: {
@@ -24,20 +25,36 @@ interface PropType {
 }
 
 const Home: React.FC<PropType> = ({ contributions }) => {
+  let parallax;
   return (
     <Container>
+      <Parallax
+        pages={3}
+        style={{ top: "0", left: "0" }}
+        ref={(ref) => (parallax = ref)}
+      >
       <div className="sticky z-50 w-full top-0">
         <Header />
       </div>
-      <Main />
-      <AboutMe />
-      <Github contributions={contributions} />
+        <ParallaxLayer>
+          <Main />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1}>
+          <AboutMe />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2}>
+          <Github contributions={contributions} />
+        </ParallaxLayer>
+
+      </Parallax>
     </Container>
   );
 };
 
 export async function getStaticProps() {
-  const { GITHUB_API_KEY }  = process.env
+  const { GITHUB_API_KEY } = process.env;
   const client = new ApolloClient({
     uri: "https://api.github.com/graphql",
     cache: new InMemoryCache(),
