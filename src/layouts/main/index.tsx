@@ -53,13 +53,14 @@ export const Main: FC = () => {
           <Image src={clouds} />
         </div>
 
-        <div className=" flex lg:mx-0 md:mx-48 sm:mx-0 items-end">
+        <div className=" flex z-0 lg:mx-0 md:mx-48 sm:mx-0 items-end">
           <Image
             quality={100}
             width={800}
             height={800}
             alt="photo of me"
             src={photo_of_me}
+            className="z-0"
           />
         </div>
       </div>

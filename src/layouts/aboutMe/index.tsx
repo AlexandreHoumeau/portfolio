@@ -7,7 +7,7 @@ import { FC } from "react";
 
 export const AboutMe: FC = () => {
   return (
-    <div className=" lg:grid border-y-4 border-black grid-cols-2 z-10 flex flex-col justify-center items-center transition-all duration-300 h-[100vh]">
+    <div className=" lg:grid border-y-4 z-50 border-black bg-white grid-cols-2  flex flex-col justify-center items-center transition-all duration-300 h-[100vh]">
       <div className="justify-center transition-all duration-150 lg:p-0 p-2 md:border-r-4 border-black h-full relative flex items-center">
         <div
           id="clouds"
@@ -44,7 +44,7 @@ export const AboutMe: FC = () => {
         </div>
       </div>
 
-      <div className="bg-fuchsia-300 justify-center relative px-10 py-10 lg:mt-0 mt-10 flex items-center transition-all duration-150 h-full ">
+      <div className="bg-fuchsia-300 justify-center md:border-t-0 border-t-4 border-black relative px-10 py-10 lg:mt-0 mt-10 flex items-center transition-all duration-150 h-full ">
         <ParallaxLayer offset={0.3} speed={0.08} className="z-50 lg:block hidden absolute rotate-12">
           <CssIcon
             className="md:scale-[1.2] absolute left-20 -top-20 -rotate-3"
