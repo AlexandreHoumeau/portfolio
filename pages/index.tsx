@@ -28,14 +28,14 @@ const Home: React.FC<PropType> = ({ contributions }) => {
   let parallax;
   return (
     <Container>
+      <div className="sticky z-50 w-full top-0">
+        <Header />
+      </div>
       <Parallax
         pages={3}
         style={{ top: "0", left: "0" }}
         ref={(ref) => (parallax = ref)}
       >
-      <div className="sticky z-50 w-full top-0">
-        <Header />
-      </div>
         <ParallaxLayer>
           <Main />
         </ParallaxLayer>

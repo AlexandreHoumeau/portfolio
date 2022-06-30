@@ -44,18 +44,18 @@ export const AboutMe: FC = () => {
         </div>
       </div>
 
-      <div className="bg-fuchsia-300 justify-center relative px-10 lg:mt-0 mt-10 flex items-center transition-all duration-150 h-full ">
-        <ParallaxLayer offset={0.3} speed={0.08} className="z-50 absolute rotate-12">
+      <div className="bg-fuchsia-300 justify-center relative px-10 py-10 lg:mt-0 mt-10 flex items-center transition-all duration-150 h-full ">
+        <ParallaxLayer offset={0.3} speed={0.08} className="z-50 lg:block hidden absolute rotate-12">
           <CssIcon
             className="md:scale-[1.2] absolute left-20 -top-20 -rotate-3"
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.8} speed={0.2} className="z-50 absolute rotate-12">
+        <ParallaxLayer offset={0.8} speed={0.2} className="z-50 absolute lg:block hidden rotate-12">
           <HtmlIcon  className="absolute md:scale-150 right-20 rotate-6 " />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.98} speed={0.3} className="z-50 absolute -bottom-10">
+        <ParallaxLayer offset={0.98} speed={0.3} className="z-50 absolute lg:block hidden -bottom-10">
           <MeIcon
             className="md:scale-[2] absolute left-20  rotate-[30deg]"
           />
