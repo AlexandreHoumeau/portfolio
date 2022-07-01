@@ -55,9 +55,9 @@ export const AboutMe: FC = () => {
           <HtmlIcon  className="absolute md:scale-150 right-20 rotate-6 " />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.98} speed={0.3} className="z-50 absolute lg:block hidden -bottom-10">
+        <ParallaxLayer offset={0.98} speed={0.2} className="z-50 absolute lg:block hidden -bottom-10">
           <MeIcon
-            className="md:scale-[2] absolute left-20  rotate-[30deg]"
+            className="md:scale-[2] absolute -left-20  rotate-[30deg]"
           />
         </ParallaxLayer>
         <div className="relative z-10">
