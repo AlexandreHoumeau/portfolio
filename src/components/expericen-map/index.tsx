@@ -133,6 +133,7 @@ export const ExperienceMap: FC = () => {
 
         <div>
           <div
+            id="pulse_animation"
             onMouseEnter={() => setChoosenExp(2)}
             onMouseLeave={() => setChoosenExp(null)}
             className="md:w-10 md:h-10 w-5 h-5 rounded-full z-50 md:bottom-[30.5%] bottom-[36.5%] right-[30%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"

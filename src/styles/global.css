@@ -64,22 +64,12 @@ body {
 }
 
 #pulse_animation {
-  animation: 1s ease-in-out animate infinite;
+  animation: 1.5s ease-in-out pulseAnimation infinite;
+  box-shadow: 0 0 0 2em transparent;
 
 }
 
-@keyframes animate {
-  0% {
-    transform: scale(1);
-    border-width: initial;
-  }
-
-  75% {
-    transform: scale(1.1);
-    border-width: 5px;
-  }
-  100% {
-    transform: scale(1.1);
-    border-width: initial;
-  }
+@keyframes pulseAnimation {
+  0% { box-shadow: 0 0 0 0; }
 }
+
