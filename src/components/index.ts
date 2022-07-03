@@ -7,3 +7,4 @@ export { Footer } from "./footer";
 export { Container } from "./container";
 export { IconButton } from './icon-button'
 export { GithubCalendar } from './github-calendar'
+export { ExperienceMap } from './expericen-map'

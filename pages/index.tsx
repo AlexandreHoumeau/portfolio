@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Header } from "@components";
-import { AboutMe, Github, Main } from "@layouts";
+import { AboutMe, Experience, Github, Main } from "@layouts";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
@@ -32,7 +32,7 @@ const Home: React.FC<PropType> = ({ contributions }) => {
         <Header />
       </div>
       <Parallax
-        pages={3}
+        pages={4}
         style={{ top: "0", left: "0" }}
         ref={(ref) => (parallax = ref)}
       >
@@ -43,11 +43,13 @@ const Home: React.FC<PropType> = ({ contributions }) => {
         <ParallaxLayer offset={1}>
           <AboutMe />
         </ParallaxLayer>
-
         <ParallaxLayer offset={2}>
-          <Github contributions={contributions} />
+          <Experience />
         </ParallaxLayer>
 
+        <ParallaxLayer offset={3}>
+          <Github contributions={contributions} />
+        </ParallaxLayer>
       </Parallax>
     </Container>
   );
