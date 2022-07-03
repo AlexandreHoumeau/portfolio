@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://use.typekit.net/blj1kuk.css");
+@import url("https://use.typekit.net/blj1kuk.css");
 
 html,
 body {
@@ -13,11 +14,12 @@ body {
 }
 
 @font-face {
-  font-family: 'Constructio';
+  font-family: "Constructio";
   font-weight: normal;
   font-size: normal;
-  src: url('../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.ttf') format('truetype');
-  src: url('../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.otf');
+  src: url("../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.ttf")
+    format("truetype");
+  src: url("../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.otf");
 }
 
 #clouds {
@@ -26,7 +28,7 @@ body {
   animation-iteration-count: infinite;
   animation-direction: forward;
   animation-duration: 3s; */
-  animation: 2s ease bounce infinite
+  animation: 2s ease bounce infinite;
 }
 
 #clouds2 {
@@ -38,27 +40,46 @@ body {
 }
 
 #title {
-	color: mix(#fff, #A5B4FC, 85%);
-	text-shadow: 
-		-0.0075em 0.0075em 0 mix(#fff, #A5B4FC, 94%),
-		0.005em 0.005em 0 mix(#fff, #A5B4FC, 60%),
-		0.01em 0.01em 0 mix(#fff, #A5B4FC, 62%), 
-		0.015em 0.015em mix(#fff, #A5B4FC, 64%), 
-		0.02em 0.02em 0 mix(#fff, #A5B4FC, 66%), 
-		0.025em 0.025em 0 mix(#fff, #A5B4FC, 68%),
-		0.03em 0.03em 0 mix(#fff, #A5B4FC, 70%),
-		0.035em 0.035em 0 mix(#fff, #A5B4FC, 72%)!important;
+  color: mix(#fff, #a5b4fc, 85%);
+  text-shadow: -0.0075em 0.0075em 0 mix(#fff, #a5b4fc, 94%),
+    0.005em 0.005em 0 mix(#fff, #a5b4fc, 60%),
+    0.01em 0.01em 0 mix(#fff, #a5b4fc, 62%),
+    0.015em 0.015em mix(#fff, #a5b4fc, 64%),
+    0.02em 0.02em 0 mix(#fff, #a5b4fc, 66%),
+    0.025em 0.025em 0 mix(#fff, #a5b4fc, 68%),
+    0.03em 0.03em 0 mix(#fff, #a5b4fc, 70%),
+    0.035em 0.035em 0 mix(#fff, #a5b4fc, 72%) !important;
 }
 
-
 @keyframes bounce {
-  0% { 
+  0% {
     transform: translateY(0);
   }
-  50% { 
+  50% {
     transform: translateY(5px);
   }
-  100% { 
+  100% {
     transform: translateY(0);
-   }
+  }
+}
+
+#pulse_animation {
+  animation: 1s ease-in-out animate infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+    border-width: initial;
+  }
+
+  75% {
+    transform: scale(1.1);
+    border-width: 5px;
+  }
+  100% {
+    transform: scale(1.1);
+    border-width: initial;
+  }
 }

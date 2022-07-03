@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         Constructio: ["ConstructioGrotesk-Regular"],
         Courier: ["courier-std"],
+        CourierBold: ["courier-bold"],
         Abril: ["Abril Fatface"],
       },
     },
