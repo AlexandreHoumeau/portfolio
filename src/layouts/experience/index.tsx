@@ -39,7 +39,7 @@ export const Experience: FC = () => {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={0.5}
+            offset={0.6}
             speed={0.1}
             className=" lg:block hidden absolute rotate-12"
           >
