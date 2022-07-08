@@ -1,0 +1,34 @@
+{
+  "front": [
+    {
+      "title": "React"
+    },
+    {
+      "title": "Next.js"
+    },
+    {
+      "title": "Vue.js"
+    },
+    {
+      "title": "Javascript"
+    },
+    {
+      "title": "Typescript"
+    },
+    {
+      "title": "HTML"
+    },
+    {
+      "title": "CSS"
+    },
+    {
+      "title": "Tailwind css"
+    }
+  ],
+  "backend": [
+    {}
+  ],
+  "db": [
+    {}
+  ]
+}
