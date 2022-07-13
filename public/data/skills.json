@@ -1,32 +1,75 @@
 {
   "front": [
     {
-      "title": "React"
+      "title": "React.js",
+      "percent": "80"
     },
     {
-      "title": "Next.js"
+      "title": "React Native",
+      "percent": "80"
     },
     {
-      "title": "Vue.js"
+      "title": "Next.js",
+      "percent": "50"
     },
     {
-      "title": "Javascript"
+      "title": "Vue.js",
+      "percent": "30"
     },
     {
-      "title": "Typescript"
+      "title": "Javascript",
+      "percent": "90"
     },
     {
-      "title": "HTML"
+      "title": "Typescript",
+      "percent": "60"
     },
     {
-      "title": "CSS"
+      "title": "HTML",
+      "percent": "90"
     },
     {
-      "title": "Tailwind css"
+      "title": "CSS",
+      "percent": "90"
+    },
+    {
+      "title": "Tailwind css",
+      "percent": "100"
     }
   ],
   "backend": [
-    {}
+    {
+      "title": "Node.js",
+      "percent": "80"
+    },
+    {
+      "title": "Express.js",
+      "percent": "80"
+    },
+    {
+      "title": "PHP",
+      "percent": "30"
+    },
+    {
+      "title": "Python",
+      "percent": "20"
+    },
+    {
+      "title": "MongoDB",
+      "percent": "80"
+    },
+    {
+      "title": "Redis",
+      "percent": "60"
+    },
+    {
+      "title": "ElasticSearch",
+      "percent": "70"
+    },
+    {
+      "title": "MYSQL",
+      "percent": "30"
+    }
   ],
   "db": [
     {}
