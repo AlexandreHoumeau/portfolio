@@ -1,17 +1,10 @@
 import "@styles/global.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { AppProps } from "next/app";
 import Head from "next/head";
-import { useEffect } from "react";
 import { RecoilRoot } from "recoil";
 import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <RecoilRoot>
       <Head>
