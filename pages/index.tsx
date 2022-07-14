@@ -1,9 +1,9 @@
 import React from "react";
 
+import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import { Container, Header } from "@components";
-import { AboutMe, Experience, Github, Main } from "@layouts";
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { AboutMe, Experience, Github, Main, Skills } from "@layouts";
+import { Parallax } from "@react-spring/parallax";
 
 interface PropType {
   contributions: {
@@ -32,24 +32,28 @@ const Home: React.FC<PropType> = ({ contributions }) => {
         <Header />
       </div>
       <Parallax
-        pages={4}
-        style={{ top: "0", left: "0" }}
+        pages={5}
+        innerStyle={{ overflow: "initial" }}
+        style={{ top: "0", left: "0", height: "100vh", overflow: "scroll" }}
         ref={(ref) => (parallax = ref)}
       >
-        <ParallaxLayer>
-          <Main />
-        </ParallaxLayer>
+        {/* <ParallaxLayer> */}
+        <Main />
+        {/* </ParallaxLayer> */}
 
-        <ParallaxLayer offset={1}>
-          <AboutMe />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2}>
-          <Experience />
-        </ParallaxLayer>
+        {/* <ParallaxLayer offset={1}> */}
+        <AboutMe />
+        {/* </ParallaxLayer> */}
+        {/* <ParallaxLayer offset={2}> */}
+        <Experience />
+        {/* </ParallaxLayer> */}
 
-        <ParallaxLayer offset={3}>
-          <Github contributions={contributions} />
-        </ParallaxLayer>
+        {/* <ParallaxLayer factor={4} offset={3}> */}
+        <Skills />
+        {/* </ParallaxLayer> */}
+        {/* <ParallaxLayer offset={6}> */}
+        <Github contributions={contributions} />
+        {/* </ParallaxLayer> */}
       </Parallax>
     </Container>
   );
