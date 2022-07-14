@@ -8,8 +8,8 @@ import { FC } from "react";
 
 export const Experience: FC = () => {
   return (
-    <div className="2xl:grid relative grid-cols-2 z-10 lg:p-0 p-2 flex flex-col-reverse	 justify-center items-center transition-all bg-green-400 duration-300  md:h-[100vh] ">
-      <div className="md:p-10 relative z-50 md:px-20">
+    <div className="2xl:grid relative grid-cols-2 z-10 lg:p-0 p-2 flex flex-col-reverse justify-center items-center transition-all bg-green-400 duration-300  md:h-[100vh] ">
+      <div className="md:p-10 px-0 relative z-50 md:px-20">
         <div className="font-CourierBold mb-5 hidden md:block text-2xl">
           I had the opportunity to work on:
         </div>

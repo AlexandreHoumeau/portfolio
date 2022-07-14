@@ -5,7 +5,7 @@ import { animated, useSpring } from "react-spring";
 const EXP = [
   {
     descritpion:
-      "A tool to scrape as many job offers as possible on the internet every day. This project is still running and fetches an average of 2000 offers per month. I used puppeteer, a node.js library.",
+      "A tool to scrape as many job offers as possible on the internet every day. I used puppeteer, a node.js library.",
   },
   {
     descritpion: "Admin interfaces using Next.js, ReactJs or Vue.js",
@@ -43,7 +43,7 @@ export const ExperienceMap: FC = () => {
   });
 
   return (
-    <div className="md:bg-amber-50 rounded-lg md:border-4 md:w-[684px] w-[350px] border-black  flex justify-center md:py-20 relative">
+    <div className="md:bg-amber-50 rounded-lg md:border-4 md:w-[684px] w-[305px] border-black flex justify-center md:py-20 relative">
       <div
         style={{ fontFamily: "Constructio" }}
         className="absolute md:top-10 top-20 left-4  md:left-8 font-Constructio md:text-3xl text-sm text-blue-500"
@@ -78,9 +78,9 @@ export const ExperienceMap: FC = () => {
             id="pulse_animation"
             onMouseEnter={() => setChoosenExp(0)}
             onMouseLeave={() => setChoosenExp(null)}
-            className="md:w-10 md:h-10 w-5 h-5 rounded-full md:top-[16%] top-[26%] left-[15%] absolute md:border-4 border-2 border-black bg-blue-500"
+            className="md:w-10 md:h-10 w-5 h-5 rounded-full md:top-[16%] top-[33%] md:left-[15%] left-[25%] absolute md:border-4 border-2 border-black bg-blue-500"
           />
-          <div className="absolute md:top-[10%] top-[17.5%] left-[17.8%] flex items-start ">
+          <div className="absolute md:top-[10%] top-[24.5%] md:left-[17.8%] left-[28.2%] flex items-start ">
             <hr
               className={classNames(
                 "w-3 bg-black transition-all duration-300",
@@ -136,9 +136,9 @@ export const ExperienceMap: FC = () => {
             id="pulse_animation"
             onMouseEnter={() => setChoosenExp(2)}
             onMouseLeave={() => setChoosenExp(null)}
-            className="md:w-10 md:h-10 w-5 h-5 rounded-full z-50 md:bottom-[30.5%] bottom-[36.5%] right-[30%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
+            className="md:w-10 md:h-10 w-5 h-5 rounded-full z-50 md:bottom-[30.5%] bottom-[37.5%] right-[30%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
           />
-          <div className="absolute flex flex-col md:bottom-[6.5%] md:-right-[1.8%] -right-[17.5%] bottom-[20.5%] justify-center items-center">
+          <div className="absolute flex flex-col md:bottom-[6.5%] md:-right-[1.8%] left-[33.5%] bottom-[15.5%] justify-center items-center">
             <hr
               className={classNames(
                 "bg-black w-1 transition-all duration-300",
@@ -160,9 +160,9 @@ export const ExperienceMap: FC = () => {
             id="pulse_animation"
             onMouseEnter={() => setChoosenExp(3)}
             onMouseLeave={() => setChoosenExp(null)}
-            className="md:w-10 md:h-10 w-5 h-5 z-10 rounded-full bottom-[27%] left-[20%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
+            className="md:w-10 md:h-10 w-5 h-5 z-10 rounded-full md:bottom-[27%] bottom-[35%] left-[20%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
           />
-          <div className="absolute flex flex-col md:bottom-[33%] bottom-[30%] md:left-[4%] -left-[9.5%] justify-center items-center">
+          <div className="absolute flex flex-col md:bottom-[33%] bottom-[38%] md:left-[4%] -left-[13.8%] justify-center items-center">
             <div
               className={classNames(
                 "text-center font-Courier md:text-base text-sm w-2/3 transition-all duration-300 delay-300",
@@ -180,7 +180,7 @@ export const ExperienceMap: FC = () => {
           </div>
         </div>
       </div>
-      <div className="md:bg-black -z-10 w-full h-full absolute top-2 left-2 rounded-lg" />
+      <div className="bg-black md:block hidden -z-10 w-full h-full absolute top-2 left-2 rounded-lg" />
       <div
         style={{ fontFamily: "Constructio" }}
         className="absolute md:bottom-16 bottom-24 md:left-48 left-20 font-Constructio  md:text-3xl text-sm text-blue-500"
