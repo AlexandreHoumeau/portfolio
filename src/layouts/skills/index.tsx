@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import skills from "public/data/skills.json";
 import { FC, useEffect, useState } from "react";
 import { animated, useSpring } from "react-spring";
-import strawberry_bg from 'public/images/strawberry_bg.png'
+import strawberry_bg from "public/images/strawberry_bg.png";
 
 export const Skills: FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -34,13 +34,13 @@ export const Skills: FC = () => {
 
   return (
     <div
-      className=" bg-pink-300 bg-repeat border-black border-t-4 relative  grid grid-cols-2"
+      className=" bg-pink-300 bg-repeat border-black md:border-t-4 border-t-2 relative grid grid-cols-2"
       style={{ backgroundImage: `url(/images/strawberry_bg.png)`, zIndex: -2 }}
     >
-      <div className="p-20 border-black border-r-4">
+      <div className="md:p-20 p-2 border-black border-r-4">
         <div
           style={{ fontFamily: "Constructio" }}
-          className="text-3xl sticky top-[120px]"
+          className="md:text-3xl text-xs sticky top-[120px]"
         >
           I’m a full-stack developper, so that mean that I have skills in:
         </div>
@@ -48,7 +48,7 @@ export const Skills: FC = () => {
         <div className="h-[100vh]">
           <animated.div
             style={opacityFrontend}
-            className="sticky text-center font-CourierBold text-3xl top-[calc(40vh_+_102px)]"
+            className="sticky text-center font-CourierBold md:text-3xl text-xs top-[calc(40vh_+_102px)]"
           >
             Frontend
           </animated.div>
@@ -59,7 +59,7 @@ export const Skills: FC = () => {
         <div className="h-[100vh] relative">
           <animated.div
             style={opacityBackend}
-            className="sticky font-CourierBold text-center text-3xl top-[calc(40vh_+_102px)]"
+            className="sticky font-CourierBold text-center md:text-3xl text-xs top-[calc(40vh_+_102px)]"
           >
             Backend - Database
           </animated.div>
@@ -70,20 +70,23 @@ export const Skills: FC = () => {
         </div>
       </div>
 
-      <div className="p-20">
+      <div className="md:p-20">
         <animated.div
           style={opacityFrontend}
-          className="h-[70vh] z-[100] font-Courier text-2xl"
+          className="h-[70vh] z-[100] font-Courier md:text-2xl text-xs"
         >
           {skills?.front?.map((skill, index) => (
             <motion.div
               key={skill.title}
               style={{ top: index * 5 + "vh" }}
               className={classNames(
-                "border-4 p-4 m-2 h-20 bg-white transition-all duration-300 relative border-black rounded-lg"
+                "md:border-4 border-2 md:p-4 m-2 md:h-20 h-10 bg-white transition-all duration-300 relative border-black rounded-lg"
               )}
             >
-              <div style={{ zIndex: 100 }} className="absolute top-5">
+              <div
+                style={{ zIndex: 100 }}
+                className="absolute md:top-5 top-2 left-2"
+              >
                 {skill.title}
               </div>
               <motion.div
@@ -95,7 +98,7 @@ export const Skills: FC = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `${skill.percent}%` }}
                 style={{ zIndex: 1 }}
-                className="bg-amber-300 rounded rounded-r-none border-r-4 border-black  w-full h-full absolute top-0 left-0"
+                className="bg-amber-300 rounded rounded-r-none md:border-r-4 border-r-2 border-black  w-full h-full absolute top-0 left-0"
               />
               <div
                 style={{ zIndex: -3 }}
@@ -107,17 +110,20 @@ export const Skills: FC = () => {
 
         <animated.div
           style={opacityBackend}
-          className="h-[70vh] mt-20 z-[100] font-Courier text-2xl"
+          className="h-[70vh] z-[100] font-Courier md:text-2xl text-xs"
         >
           {skills?.backend?.map((skill, index) => (
             <motion.div
               key={skill.title}
               style={{ top: index * 5 + "vh" }}
               className={classNames(
-                "border-4 p-4 m-2 h-20 bg-white transition-all duration-300 relative border-black rounded-lg"
+                "md:border-4 border-2 md:p-4 m-2 md:h-20 h-10 bg-white transition-all duration-300 relative border-black rounded-lg"
               )}
             >
-              <div style={{ zIndex: 100 }} className="absolute top-5">
+              <div
+                style={{ zIndex: 100 }}
+                className="absolute md:top-5 top-2 left-2"
+              >
                 {skill.title}
               </div>
               <motion.div
@@ -129,7 +135,7 @@ export const Skills: FC = () => {
                 initial={{ width: 0 }}
                 whileInView={{ width: `${skill.percent}%` }}
                 style={{ zIndex: 1 }}
-                className="bg-amber-300 rounded rounded-r-none border-r-4 border-black  w-full h-full absolute top-0 left-0"
+                className="bg-amber-300 rounded rounded-r-none md:border-r-4 border-r-2 border-black  w-full h-full absolute top-0 left-0"
               />
               <div
                 style={{ zIndex: -3 }}

@@ -2,8 +2,9 @@ import React from "react";
 
 import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import { Container, Header } from "@components";
-import { AboutMe, Experience, Github, Main, Skills } from "@layouts";
+import { AboutMe, Experience, Github, Main, Skills, SkillsMobile } from "@layouts";
 import { Parallax } from "@react-spring/parallax";
+import { isMobile } from "react-device-detect";
 
 interface PropType {
   contributions: {
@@ -49,7 +50,11 @@ const Home: React.FC<PropType> = ({ contributions }) => {
         {/* </ParallaxLayer> */}
 
         {/* <ParallaxLayer factor={4} offset={3}> */}
-        <Skills />
+        {isMobile ? (
+          <SkillsMobile />
+        ) : (
+          <Skills />
+        )}
         {/* </ParallaxLayer> */}
         {/* <ParallaxLayer offset={6}> */}
         <Github contributions={contributions} />
