@@ -109,7 +109,7 @@ export const Skills: FC = () => {
 
         <animated.div
           style={opacityBackend}
-          className="h-[70vh] z-[100] font-Courier md:text-2xl text-xs"
+          className="h-[70vh] z-[100] mt-52 font-Courier md:text-2xl text-xs"
         >
           {skills?.backend?.map((skill, index) => (
             <motion.div
