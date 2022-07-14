@@ -31,7 +31,7 @@ export const Github: FC<PropType> = ({ contributions }) => {
   return (
     <div
       className={classNames(
-        "xl:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 h-[100vh]",
+        "xl:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 md:h-[100vh]",
         update ? "bg-purple-300" : "bg-orange-100"
       )}
     >
@@ -60,7 +60,7 @@ export const Github: FC<PropType> = ({ contributions }) => {
         </div>
       </div>
 
-      <div className="justify-center xl:mt-0 mt-20 flex items-center">
+      <div className="justify-center xl:my-0 my-20  flex items-center">
         <div className="space-y-2">
           <GithubCalendar
             contributions={contributions}
