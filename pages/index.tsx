@@ -35,7 +35,7 @@ const Home: React.FC<PropType> = ({ contributions }) => {
       <Parallax
         pages={5}
         innerStyle={{ overflow: "initial" }}
-        style={{ top: "0", left: "0", height: "100vh", overflow: "scroll" }}
+        style={{ top: "0", left: "0", height: "100vh", overflow: "scroll", overflowY: "none" }}
         ref={(ref) => (parallax = ref)}
       >
         {/* <ParallaxLayer> */}

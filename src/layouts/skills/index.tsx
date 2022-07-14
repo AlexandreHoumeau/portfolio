@@ -90,7 +90,6 @@ export const Skills: FC = () => {
                 {skill.title}
               </div>
               <motion.div
-                viewport={{ margin: "-200px -20px 0px 100px" }}
                 transition={{
                   duration: 0.8,
                   delay: 0.1,
