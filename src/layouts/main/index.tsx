@@ -1,14 +1,12 @@
-import Image from "next/image";
-import React, { FC, useEffect } from "react";
-import photo_of_me from "public/images/moi1.png";
-import clouds from "public/images/clouds.png";
-import { Button } from "../../components";
 import { Arrow1Icon, StarIcon } from "@components/icons";
-import { pageview } from "../../utils";
+import Image from "next/image";
+import Link from "next/link";
+import clouds from "public/images/clouds.png";
+import photo_of_me from "public/images/moi1.png";
+import { FC } from "react";
+import { Button } from "../../components";
+
 export const Main: FC = () => {
-  useEffect(() => {
-    pageview("/");
-  }, []);
   return (
     <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 sm:h-[100vh]">
       <div className="flex justify-center md:text-right text-center items-center">
@@ -25,7 +23,11 @@ export const Main: FC = () => {
             <br /> should scroll to see more about me!!
           </div>
           <div className="flex md:justify-end justify-center items-end md:space-x-10 mt-10">
-            <Button className="bg-amber-300">Contact me</Button>
+            <Link href="#contact">
+              <a>
+                <Button className="bg-amber-300">Contact me</Button>
+              </a>
+            </Link>
             <div className="-rotate-45">
               <Arrow1Icon className="xl:mb-10 md:block hidden" />
             </div>
