@@ -8,3 +8,6 @@ export { Container } from "./container";
 export { IconButton } from './icon-button'
 export { GithubCalendar } from './github-calendar'
 export { ExperienceMap } from './expericen-map'
+export { Input } from './input'
+export { Select } from './select'
+export { CookieModal } from './cookieModal'
