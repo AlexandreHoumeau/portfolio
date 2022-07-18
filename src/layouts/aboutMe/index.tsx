@@ -7,7 +7,7 @@ import { FC } from "react";
 
 export const AboutMe: FC = () => {
   return (
-    <div className=" lg:grid border-y-4 z-[1000] border-black bg-white grid-cols-2  flex flex-col justify-center items-center transition-all duration-300 md:h-[100vh]">
+    <div id="about" className=" lg:grid border-y-4 z-[1000] border-black bg-white grid-cols-2  flex flex-col justify-center items-center transition-all duration-300 md:h-[100vh]">
       <div className="justify-center transition-all duration-150 lg:p-0 p-2 md:border-r-4 border-black h-full relative flex items-center">
         <div
           id="clouds"
