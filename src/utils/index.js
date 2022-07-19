@@ -1,5 +1,6 @@
 export const pageview = (url) => {
-  window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
+  const { NEXT_PUBLIC_GA_API_KEY } = process.env;
+  window.gtag('config', NEXT_PUBLIC_GA_API_KEY, {
     page_path: url,
   })
 }

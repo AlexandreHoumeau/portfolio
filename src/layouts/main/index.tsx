@@ -4,12 +4,11 @@ import photo_of_me from "public/images/moi1.png";
 import clouds from "public/images/clouds.png";
 import { Button } from "../../components";
 import { Arrow1Icon, StarIcon } from "@components/icons";
-import { pageview } from '../../utils'
+import { pageview } from "../../utils";
 export const Main: FC = () => {
-
   useEffect(() => {
-    pageview('/')
-  }, [])
+    pageview("/");
+  }, []);
   return (
     <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 sm:h-[100vh]">
       <div className="flex justify-center md:text-right text-center items-center">
