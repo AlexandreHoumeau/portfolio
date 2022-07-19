@@ -29,7 +29,7 @@ class CustomDocument extends Document {
           />
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_API_KEY}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_API_KEY}`}
           />
           <script
             dangerouslySetInnerHTML={{
@@ -37,7 +37,10 @@ class CustomDocument extends Document {
               window.dataLayer = window.dataLayer || [];
               function gtag(){window.dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA_API_KEY}');
+    
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_API_KEY}', {
+              page_path: window.location.pathname,
+            });
           `,
             }}
           />
