@@ -1,10 +1,7 @@
 import Document, {
-  DocumentContext,
-  Head,
-  DocumentInitialProps,
-  Html,
+  DocumentContext, DocumentInitialProps, Head, Html,
   Main,
-  NextScript,
+  NextScript
 } from "next/document";
 
 class CustomDocument extends Document {
@@ -29,16 +26,15 @@ class CustomDocument extends Document {
           />
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_API_KEY}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
           <script
             dangerouslySetInnerHTML={{
               __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){window.dataLayer.push(arguments);}
-              gtag('js', new Date());
-    
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_API_KEY}', {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
               page_path: window.location.pathname,
             });
           `,
