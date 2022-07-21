@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <meta name="description" content="Hi I'm Alexandre Houmeau a freelance full stack web developer looking for a job in Amsterdam. I working on a daily basis with ReactJs Node.js Next.js and very various Javascript tools and framework."/>
         <meta property="og:title" content="Alexandre Houmeau - full stack web developer"/>
         <meta property="og:description" content="Hi I'm Alexandre Houmeau a freelance full stack web developer looking for a job in Amsterdam. I working on a daily basis with ReactJs Node.js Next.js and very various Javascript tools and framework."/>
-        <meta property="og:url" content="https://portfolio-hazel-iota.vercel.app/"/>
+        <meta property="og:url" content="https://alexandre-houmeau.com/"/>
         <meta property="og:type" content="website"/>
       </Head>
       <Component {...pageProps} />
