@@ -7,7 +7,11 @@ import Link from "next/link";
 export const Header: React.FC = () => {
   const handleOnClick = (link?: string, origin?: string) => {
     window.open(link, "_blank");
-    window?.gtag("event", "click_button", origin);
+    window?.gtag("event", "click_button", {
+      params: {
+        origin,
+      },
+    });
   };
 
   return (
