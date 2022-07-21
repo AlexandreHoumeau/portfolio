@@ -31,6 +31,11 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="Hi I'm Alexandre Houmeau a freelance full stack web developer looking for a job in Amsterdam. I working on a daily basis with ReactJs Node.js Next.js and very various Javascript tools and framework."/>
+        <meta property="og:title" content="Alexandre Houmeau - full stack web developer"/>
+        <meta property="og:description" content="Hi I'm Alexandre Houmeau a freelance full stack web developer looking for a job in Amsterdam. I working on a daily basis with ReactJs Node.js Next.js and very various Javascript tools and framework."/>
+        <meta property="og:url" content="https://portfolio-hazel-iota.vercel.app/"/>
+        <meta property="og:type" content="website"/>
       </Head>
       <Component {...pageProps} />
     </RecoilRoot>
