@@ -8,12 +8,12 @@ export default function handler(req: any, res: any) {
     const msg = [
       {
         to: email, // Change to your recipient
-        from: "alexandre.houmeau@gmail.com", // Change to your verified sender
+        from: "contact@alexandre-houmeau.com", // Change to your verified sender
         templateId: "d-b2c8ac2fb3174c72b0f5a7d1101783c2",
       },
       {
         to: "alexandre.houmeau@gmail.com", // Change to your recipient
-        from: "alexandre.houmeau@gmail.com", // Change to your verified sender
+        from: "contact@alexandre-houmeau.com", // Change to your verified sender
         subject: "New visitor on you website",
         html: `<p>List of informations:</p>
           <ul>
