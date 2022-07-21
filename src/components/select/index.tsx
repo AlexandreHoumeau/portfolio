@@ -11,7 +11,7 @@ type Props = {
 
 export const Select = ({ options = [], placeholder, onChange, value }: Props) => {
   const [active, setActive] = useState(false);
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState<string | undefined>("");
   const wrapperRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
