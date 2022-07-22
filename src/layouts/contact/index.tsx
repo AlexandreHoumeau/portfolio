@@ -59,7 +59,7 @@ export const Contact = () => {
         setShowModal(true);
         clearInputs();
       }
-      window?.gtag("event", "click_button", {
+      window?.gtag("event", "click_button_send_email", {
         params: {
           origin: 'send_email',
         },

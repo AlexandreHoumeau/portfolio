@@ -43,6 +43,11 @@ export const ContactMobile = () => {
         setLoading(false);
         setShowModal(true);
         clearInputs();
+        window?.gtag("event", "click_button_send_email", {
+          params: {
+            origin: "send_email",
+          },
+        });
       }
     } finally {
       setLoading(false);
@@ -90,7 +95,10 @@ export const ContactMobile = () => {
                   value={name}
                   onChange={(e: any) => setName(e.target.value)}
                   placeholder="Type here"
-                  className={classNames("w-full  p-2 rounded-lg border-black border-2 focus:outline-none", errors.name && 'border-red-500')}
+                  className={classNames(
+                    "w-full  p-2 rounded-lg border-black border-2 focus:outline-none",
+                    errors.name && "border-red-500"
+                  )}
                 />
                 <div className="absolute w-full h-full rounded-lg bg-black top-1 z-[-1] left-1" />
               </div>
@@ -103,7 +111,10 @@ export const ContactMobile = () => {
                   value={email}
                   onChange={(e: any) => setEmail(e.target.value)}
                   placeholder="Type here"
-                  className={classNames("w-full  p-2 rounded-lg border-black border-2 focus:outline-none", errors.email && 'border-red-500')}
+                  className={classNames(
+                    "w-full  p-2 rounded-lg border-black border-2 focus:outline-none",
+                    errors.email && "border-red-500"
+                  )}
                 />
                 <div className="absolute w-full h-full rounded-lg bg-black top-1 z-[-1] left-1 " />
               </div>
