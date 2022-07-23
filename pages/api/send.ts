@@ -1,14 +1,17 @@
 const sgMail = require("@sendgrid/mail");
 const fs = require("fs");
+import path from 'path'
+import getConfig from 'next/config'
+const { serverRuntimeConfig } = getConfig()
 
 function base64_encode(file: any) {
-  var bitmap = fs.readFileSync(file);
+  var bitmap = fs.readFileSync(path.join(serverRuntimeConfig.PROJECT_ROOT, file));
   return new Buffer(bitmap).toString("base64");
 }
 
 export default function handler(req: any, res: any) {
   const { email, name, role, quality, comment } = req.body;
-  let data_base64 = base64_encode('./pdf/my_resume.pdf');
+  let data_base64 = base64_encode('public/pdf/my_resume.pdf');
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
