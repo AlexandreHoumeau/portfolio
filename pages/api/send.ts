@@ -1,6 +1,5 @@
 const sgMail = require("@sendgrid/mail");
 const fs = require("fs");
-import my_resume from 'public/images/my_resume.jpg'
 
 function base64_encode(file: any) {
   var bitmap = fs.readFileSync(file);
@@ -9,7 +8,7 @@ function base64_encode(file: any) {
 
 export default function handler(req: any, res: any) {
   const { email, name, role, quality, comment } = req.body;
-  let data_base64 = base64_encode(my_resume);
+  let data_base64 = base64_encode('public/images/my_resume.jpg');
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -23,7 +22,7 @@ export default function handler(req: any, res: any) {
           {
             filename: `my_resume`,
             content: data_base64,
-            type: 'application/jpg',
+            contentType:  'image/jpeg',
             disposition: 'attachment'
           }
          ]
