@@ -8,7 +8,7 @@ function base64_encode(file: any) {
 
 export default function handler(req: any, res: any) {
   const { email, name, role, quality, comment } = req.body;
-  let data_base64 = base64_encode('public/images/my_resume.jpg');
+  let data_base64 = base64_encode('./pdf/my_resume.pdf');
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -22,7 +22,7 @@ export default function handler(req: any, res: any) {
           {
             filename: `my_resume`,
             content: data_base64,
-            contentType:  'image/jpeg',
+            type: 'application/pdf',
             disposition: 'attachment'
           }
          ]
@@ -51,7 +51,6 @@ export default function handler(req: any, res: any) {
         return res.json("Email sent");
       })
       .catch((error: any) => {
-        console.log(error)
         res.json({ error });
       });
   } else {
