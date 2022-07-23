@@ -52,6 +52,7 @@ export default function handler(req: any, res: any) {
         return res.json("Email sent");
       })
       .catch((error: any) => {
+        console.log(error)
         res.json({ error });
       });
   } else {
