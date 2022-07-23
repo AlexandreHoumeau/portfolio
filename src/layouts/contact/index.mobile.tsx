@@ -32,7 +32,7 @@ export const ContactMobile = () => {
         email:
           !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) ||
           !email,
-      });
+      })
 
       if (
         email &&

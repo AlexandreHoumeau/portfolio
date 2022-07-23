@@ -5,7 +5,7 @@ import { animated, useSpring } from "react-spring";
 const EXP = [
   {
     descritpion:
-      "A tool to scrape as many job offers as possible on the internet every day. I used puppeteer, a node.js library.",
+      "A tool to scrap as many job offers as possible on the internet every day. I used puppeteer, a node.js library.",
   },
   {
     descritpion: "Admin interfaces using Next.js, ReactJs or Vue.js",

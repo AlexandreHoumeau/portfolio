@@ -19,7 +19,7 @@ export const Main: FC = () => {
             <br /> a web developer
           </div>
           <div className="font-Courier xl:text-xl text-lg">
-            I have 3 years of exp.. You realy
+            I have 3 years of exp.. You really
             <br /> should scroll to see more about me!!
           </div>
           <div className="flex md:justify-end justify-center items-end md:space-x-10 mt-10">
