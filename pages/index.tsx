@@ -62,7 +62,7 @@ const Home: React.FC<PropType> = ({ contributions }) => {
       <Parallax
         pages={6}
         innerStyle={{ overflow: "initial" }}
-        style={{ top: "0", left: "0", height: "100vh", overflow: "scroll" }}
+        style={{ top: "0", left: "0", overflow: "scroll" }}
         ref={(ref) => (parallax = ref)}
         className="scrollingContainer"
       >
