@@ -6,8 +6,8 @@ type Props = {
   value?: string;
   containerClassName?: string;
   className?: string;
-  onChange?: any;
-  error?: boolean;
+  onChange?: any,
+  error?: boolean
 };
 
 export const Input = ({
@@ -20,21 +20,10 @@ export const Input = ({
   ...props
 }: Props) => {
   return (
-    <div
-      className={classNames(
-        containerClassName,
-        error ? "border-red-400 error" : "",
-        "border-b"
-      )}
-    >
+    <div className={classNames(containerClassName, error ? 'border-red-400 error' : '', 'border-b')}>
       <input
-        style={{ fontFamily: "Courier-Bold" }}
-        onChange={(e) => onChange(e)}
-        className={classNames(
-          className,
-          error && "placeholder-red-400",
-          "focus:ring-brand-yellow font-CourierBold focus:border-brand-yellow focus:shadow-outline border-none focus:outline-none"
-        )}
+        onChange={e => onChange(e)}
+        className={classNames(className, error && 'placeholder-red-400', 'focus:ring-brand-yellow font-Courier focus:border-brand-yellow focus:shadow-outline border-none focus:outline-none')}
         placeholder={placeholder}
         value={value}
         {...props}

@@ -126,7 +126,7 @@ export const Contact = () => {
             <textarea
               value={comment}
               onChange={(e: any) => setComment(e.target.value)}
-              className="w-full focus:ring-brand-yellow font-CourierBold focus:border-brand-yellow focus:shadow-outline border-none focus:outline-none"
+              className="w-full focus:ring-brand-yellow font-Courier focus:border-brand-yellow focus:shadow-outline border-none focus:outline-none"
               placeholder="You have something in mind ?"
             />
           </div>
@@ -143,7 +143,7 @@ export const Contact = () => {
           </div>
 
           <div>Best regards,</div>
-          <div className="font-CourierBold">{name}</div>
+          <div className="font-Courier">{name}</div>
           <div className="flex justify-center rotate-[2deg]">
             <Button
               type="submit"

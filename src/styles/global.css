@@ -24,6 +24,11 @@ body {
   src: url("../../public/fonts/ConstructioGrotesk/ConstructioGrotesk-Regular.otf");
 }
 
+@font-face {
+  font-family: "CourierBold";
+  src: url(https://fr.allfont.net/allfont.css?fonts=courier-bold);
+}
+
 #clouds {
   /* animation-name: bounce;
   animation-delay: 0;

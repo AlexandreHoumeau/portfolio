@@ -15,7 +15,7 @@ export const SkillsMobile = () => {
       >
         I’m a full-stack developper, with skills in:
       </div>
-      <div className="font-CourierBold text-xl mt-20">Frontend:</div>
+      <div className="font-Courier text-xl mt-20">Frontend:</div>
       {skills.front.map((skill) => (
         <div key={skill.title}>
           <div className="font-Courier">{skill.title}</div>
@@ -39,7 +39,7 @@ export const SkillsMobile = () => {
         </div>
       ))}
 
-      <div className="font-CourierBold text-xl mt-20">Backend - database:</div>
+      <div className="font-Courier text-xl mt-20">Backend - database:</div>
       {skills.backend.map((skill) => (
         <div key={skill.title}>
           <div className="font-Courier">{skill.title}</div>

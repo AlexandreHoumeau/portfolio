@@ -48,7 +48,7 @@ export const Skills: FC = () => {
         <div className="h-[100vh]">
           <animated.div
             style={opacityFrontend}
-            className="sticky text-center font-CourierBold md:text-3xl text-xs top-[calc(40vh_+_102px)]"
+            className="sticky text-center font-Courier md:text-3xl text-xs top-[calc(40vh_+_102px)]"
           >
             Frontend
           </animated.div>
@@ -59,7 +59,7 @@ export const Skills: FC = () => {
         <div className="h-[100vh] relative">
           <animated.div
             style={opacityBackend}
-            className="sticky font-CourierBold text-center md:text-3xl text-xs top-[calc(40vh_+_102px)]"
+            className="sticky font-Courier text-center md:text-3xl text-xs top-[calc(40vh_+_102px)]"
           >
             Backend - Database
           </animated.div>

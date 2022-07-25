@@ -50,7 +50,7 @@ export const Select = ({ options = [], placeholder, onChange, value }: Props) =>
       <div
         className={classNames(
           selected ? "text-black" : "text-gray-400 text-center",
-          "font-CourierBold"
+          "font-Courier"
         )}
       >
         {selected || placeholder}
@@ -60,7 +60,7 @@ export const Select = ({ options = [], placeholder, onChange, value }: Props) =>
           {options.map((option) => (
             <div
               onClick={() => handleChange(option)}
-              className="cursor-pointer border-b p-2 hover:font-CourierBold"
+              className="cursor-pointer border-b p-2 hover:font-Courier"
               key={option}
             >
               {option}
