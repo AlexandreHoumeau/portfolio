@@ -16,11 +16,11 @@ export const Main: FC = () => {
             className="xl:text-7xl md:text-5xl text-3xl mb-10"
           >
             Hi! I’m Alex,
-            <br /> a web developer
+            <br /> a Web Developer
           </div>
           <div className="font-Courier xl:text-xl text-lg">
             I have 3 years of exp.. You really
-            <br /> should scroll to see more about me!!
+            <br /> should scroll to learn more about me!
           </div>
           <div className="flex md:justify-end justify-center items-end md:space-x-10 mt-10">
             <Link href="#contact">

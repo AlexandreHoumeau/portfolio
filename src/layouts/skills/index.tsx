@@ -42,7 +42,7 @@ export const Skills: FC = () => {
           style={{ fontFamily: "Constructio" }}
           className="md:text-3xl text-xs sticky top-[120px]"
         >
-          I’m a full-stack developper, so that mean that I have skills in:
+          I’m a full-stack developper, with skills in:
         </div>
 
         <div className="h-[100vh]">

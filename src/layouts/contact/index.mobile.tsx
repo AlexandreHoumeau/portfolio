@@ -81,7 +81,7 @@ export const ContactMobile = () => {
             style={{ fontFamily: "Constructio" }}
             className="text-3xl text-center"
           >
-            We should stay in touch...
+            Contact me for more information :
           </div>
 
           <form

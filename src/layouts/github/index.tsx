@@ -31,7 +31,7 @@ export const Github: FC<PropType> = ({ contributions }) => {
   return (
     <div
       className={classNames(
-        "xl:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 md:h-[100vh]",
+        "xl:grid grid-cols-2 z-10 lg:p-0 p-2 flex flex-col justify-center items-center transition-all duration-300 xl:h-[100vh]",
         update ? "bg-purple-300" : "bg-orange-100"
       )}
     >
@@ -46,8 +46,8 @@ export const Github: FC<PropType> = ({ contributions }) => {
             style={{ fontFamily: "Constructio" }}
             className="md:text-5xl xl:text-left text-center text-3xl"
           >
-            Check my contributions
-            <br /> over the year
+            Check out my
+            <br /> latest contributions
           </div>
 
           <div className="font-Courier xl:text-left text-center text-base md:text-2xl">

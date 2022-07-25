@@ -8,7 +8,7 @@ import { FC } from "react";
 
 export const Experience: FC = () => {
   return (
-    <div className="2xl:grid relative grid-cols-2 z-10 lg:p-0 p-2 flex flex-col-reverse justify-center items-center transition-all bg-green-400 duration-300 ">
+    <div className="2xl:grid relative grid-cols-2 z-10 lg:p-0 p-2 flex flex-col-reverse justify-center items-center transition-all bg-green-400 duration-300">
       <div className="md:p-10 px-0 relative z-50 md:px-20">
         <div className="font-CourierBold mb-5 hidden md:block text-2xl">
           I had the opportunity to work on:
@@ -57,7 +57,7 @@ export const Experience: FC = () => {
           style={{ fontFamily: "Constructio" }}
           className="md:text-4xl 2xl:text-left 2xl:w-5/6 text-center text-xl"
         >
-          I’m a web developer with a Master degree in web development.
+          I’m a web developer with a Master’s degree in web development.
         </div>
 
         <div className="font-Courier 2xl:w-2/3 space-y-4 md:text-xl text-sm md:mt-0 mt-4  2xl:text-left text-center">
@@ -66,7 +66,7 @@ export const Experience: FC = () => {
             working with Javascript and its environment.
           </div>
           <div>
-            Since 2019 I’m working as a full stack developer in the leading
+            Since 2019 I’ve been working as a full stack developer in the leading
             French recruiting firm, Uptoo.
           </div>
         </div>

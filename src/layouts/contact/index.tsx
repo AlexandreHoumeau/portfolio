@@ -88,7 +88,7 @@ export const Contact = () => {
           style={{ fontFamily: "Constructio" }}
           className="text-5xl text-center"
         >
-          We should stay in touch...
+          Contact me for more information :
         </div>
       </div>
       <div className="bg-white p-8 rounded-lg border-4 border-black relative">

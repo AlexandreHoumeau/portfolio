@@ -13,7 +13,7 @@ export const SkillsMobile = () => {
         style={{ fontFamily: "Constructio" }}
         className="md:text-3xl text-xl text-center"
       >
-        I’m a full-stack developper, so that mean that I have skills in:
+        I’m a full-stack developper, with skills in:
       </div>
       <div className="font-CourierBold text-xl mt-20">Frontend:</div>
       {skills.front.map((skill) => (
