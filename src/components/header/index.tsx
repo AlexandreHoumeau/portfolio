@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <nav className="border-t-4 sticky items-center top-0 w-full flex justify-between border-b-4 py-5 md:px-10 px-4 bg-amber-300 border-black">
+    <nav className="border-t-4 sticky items-center top-0 w-full flex justify-between border-b-4 py-2 md:px-10 px-4 bg-amber-300 border-black">
       <div className="flex md:space-x-4 space-x-2">
         <IconButton
           onClick={() =>

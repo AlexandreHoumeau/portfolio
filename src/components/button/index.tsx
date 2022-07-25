@@ -13,12 +13,12 @@ export const Button: React.FC<IButton> = ({
   return (
     <div className="relative z-10 -rotate-2">
       <button
-        className={`w-[200px] h-[50px] active:translate-x-1 active:translate-y-1 relative text-black rounded z-50 border-black border-2 text-2xl font-Courier ${className}`}
+        className={`w-[200px] h-[40px] active:translate-x-1 active:translate-y-1 relative text-black rounded z-50 border-black border-2 text-2xl font-Courier ${className}`}
         {...rest}
       >
         {children}
       </button>
-      <div className="bg-black absolute w-[200px] z-10 h-[50px] top-1 -right-1 rounded" />
+      <div className="bg-black absolute w-[200px] z-10 h-[40px] top-1 -right-1 rounded" />
     </div>
   );
 };
