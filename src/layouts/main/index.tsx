@@ -8,7 +8,7 @@ import { Button } from "../../components";
 
 export const Main: FC = () => {
   return (
-    <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 sm:h-[100vh]">
+    <div className="lg:grid grid-cols-2 flex flex-col lg:gap-10 bg-indigo-300 lg:h-[100vh]">
       <div className="flex justify-center md:text-right text-center items-center">
         <div className="lg:mt-20 mt-40">
           <div
@@ -58,11 +58,11 @@ export const Main: FC = () => {
           <Image src={clouds} />
         </div>
 
-        <div className=" flex z-0 lg:mx-0 md:mx-48 sm:mx-0 items-end">
+        <div className=" flex z-[0] lg:mx-0 md:mx-48 sm:mx-0 items-end">
           <Image
             quality={100}
-            width={800}
-            height={800}
+            width={600}
+            height={600}
             alt="photo of me"
             src={photo_of_me}
             className="z-0"
