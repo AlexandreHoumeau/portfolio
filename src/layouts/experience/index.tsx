@@ -8,8 +8,8 @@ import { FC } from "react";
 
 export const Experience: FC = () => {
   return (
-    <div className="2xl:grid relative grid-cols-2 z-10 lg:p-0 p-2 flex flex-col-reverse justify-center items-center transition-all bg-green-400 duration-300">
-      <div className="md:p-10 px-0 relative z-50 md:px-20">
+    <div className="lg:grid relative grid-cols-2 z-10 lg:p-0 p-2 flex flex-col-reverse justify-center items-center transition-all bg-green-400 duration-300">
+      <div className="lg:p-5 xl:p-10 p-0 px-0 my-20 relative z-50 2xl:px-20">
         <div className="font-Courier mb-5 hidden md:block text-2xl">
           I had the opportunity to work on:
         </div>
@@ -66,8 +66,8 @@ export const Experience: FC = () => {
             working with Javascript and its environment.
           </div>
           <div>
-            Since 2019 I’ve been working as a full stack developer in the leading
-            French recruiting firm, Uptoo.
+            Since 2019 I’ve been working as a full stack developer in the
+            leading French recruiting firm, Uptoo.
           </div>
         </div>
       </div>
