@@ -109,7 +109,7 @@ export const GithubCalendar: FC<PropType> = ({
                 <div
                   key={day.date}
                   className={classNames(
-                    "rounded 2xl:w-10 2xl:h-10 xl:w-6 xl:h-6 md:h-4 md:w-4 h-3 w-3 duration-300 transition-all",
+                    "rounded 2xl:w-8 2xl:h-8 xl:w-6 xl:h-6 md:h-4 md:w-4 h-3 w-3 duration-300 transition-all",
                     renderColor(day.contributionLevel)
                     // enlarge ? "w-4 h-4" : "w-10 h-10"
                   )}
