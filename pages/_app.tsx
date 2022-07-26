@@ -36,6 +36,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <meta property="og:description" content="Hi I'm Alexandre Houmeau a freelance full stack web developer looking for a job in Amsterdam. I working on a daily basis with ReactJs Node.js Next.js and very various Javascript tools and framework."/>
         <meta property="og:url" content="https://alexandre-houmeau.com/"/>
         <meta property="og:type" content="website"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />
     </RecoilRoot>
