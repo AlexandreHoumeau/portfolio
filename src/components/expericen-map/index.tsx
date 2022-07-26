@@ -43,10 +43,10 @@ export const ExperienceMap: FC = () => {
   });
 
   return (
-    <div className="md:bg-amber-50 rounded-lg md:border-4 md:w-[684px] w-[305px] border-black flex justify-center md:py-20 relative">
+    <div className="md:bg-amber-50 rounded-lg md:border-4 md:w-[500px] md:h-[500px] w-[305px] border-black flex justify-center md:py-20 relative">
       <div
         style={{ fontFamily: "Constructio" }}
-        className="absolute md:top-10 top-20 left-4  md:left-8 font-Constructio md:text-3xl text-sm text-blue-500"
+        className="absolute md:top-8 top-10 left-4  md:left-2 font-Constructio md:text-2xl text-sm text-blue-500"
       >
         2019
       </div>
@@ -54,8 +54,8 @@ export const ExperienceMap: FC = () => {
         <svg
           id="animated_svg"
           strokeWidth={4}
-          width="514"
-          height="455"
+          width="400"
+          height="350"
           viewBox="0 0 514 455"
           className="md:w-full w-3/4"
           fill="none"
@@ -78,9 +78,9 @@ export const ExperienceMap: FC = () => {
             id="pulse_animation"
             onMouseEnter={() => setChoosenExp(0)}
             onMouseLeave={() => setChoosenExp(null)}
-            className="md:w-10 md:h-10 w-5 h-5 rounded-full md:top-[16%] top-[33%] md:left-[15%] left-[25%] absolute md:border-4 border-2 border-black bg-blue-500"
+            className="md:w-8 md:h-8 w-5 h-5 rounded-full md:top-[20%] top-[28%] md:left-[15%] left-[25%] absolute md:border-4 border-2 border-black bg-blue-500"
           />
-          <div className="absolute md:top-[10%] top-[24.5%] md:left-[17.8%] left-[28.2%] flex items-start ">
+          <div className="absolute md:top-[12%] top-[17%] md:left-[17.8%] left-[28%] flex items-start ">
             <hr
               className={classNames(
                 "w-3 bg-black transition-all duration-300",
@@ -111,7 +111,7 @@ export const ExperienceMap: FC = () => {
             id="pulse_animation"
             onMouseEnter={() => setChoosenExp(1)}
             onMouseLeave={() => setChoosenExp(null)}
-            className="md:w-10 md:h-10 w-5 h-5 rounded-full top-[40%] z-10 md:right-[11%] right-[13.5%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
+            className="md:w-8 md:h-8 w-5 h-5 rounded-full top-[40%] z-10 md:right-[11%] right-[13.5%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
           />
           <div className="absolute top-[39%] right-[4.5%] flex items-center ">
             <div
@@ -136,13 +136,13 @@ export const ExperienceMap: FC = () => {
             id="pulse_animation"
             onMouseEnter={() => setChoosenExp(2)}
             onMouseLeave={() => setChoosenExp(null)}
-            className="md:w-10 md:h-10 w-5 h-5 rounded-full z-50 md:bottom-[30.5%] bottom-[37.5%] right-[30%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
+            className="md:w-8 md:h-8 w-5 h-5 rounded-full z-50 md:bottom-[30%] bottom-[34.5%] right-[30%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
           />
-          <div className="absolute flex flex-col md:bottom-[6.5%] md:-right-[1.8%] left-[33.5%] bottom-[15.5%] justify-center items-center">
+          <div className="absolute flex flex-col md:bottom-[6.5%] md:-right-[0%] left-[33.5%] bottom-[2.5%] justify-center items-center">
             <hr
               className={classNames(
                 "bg-black w-1 transition-all duration-300",
-                choosenExp === 2 ? "md:h-[100px] h-[50px]" : "h-0"
+                choosenExp === 2 ? " h-[50px]" : "h-0"
               )}
             />
             <div
@@ -160,9 +160,9 @@ export const ExperienceMap: FC = () => {
             id="pulse_animation"
             onMouseEnter={() => setChoosenExp(3)}
             onMouseLeave={() => setChoosenExp(null)}
-            className="md:w-10 md:h-10 w-5 h-5 z-10 rounded-full md:bottom-[27%] bottom-[35%] left-[20%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
+            className="md:w-8 md:h-8 w-5 h-5 z-10 rounded-full md:bottom-[27%] bottom-[35%] md:left-[18.5%] left-[21%] absolute border-2 md:border-4 border-black hover:animate-none bg-blue-500"
           />
-          <div className="absolute flex flex-col md:bottom-[33%] bottom-[38%] md:left-[4%] -left-[13.8%] justify-center items-center">
+          <div className="absolute flex flex-col md:bottom-[33%] bottom-[38%] md:-left-[4.5%] -left-[12.8%] justify-center items-center">
             <div
               className={classNames(
                 "text-center font-Courier md:text-base text-sm w-2/3 transition-all duration-300 delay-300",
@@ -174,7 +174,7 @@ export const ExperienceMap: FC = () => {
             <hr
               className={classNames(
                 "bg-black w-1 transition-all duration-300",
-                choosenExp === 3 ? "md:h-[100px] h-[50px]" : "h-0"
+                choosenExp === 3 ? "h-[50px]" : "h-0"
               )}
             />
           </div>
@@ -183,7 +183,7 @@ export const ExperienceMap: FC = () => {
       <div className="bg-black md:block hidden -z-10 w-full h-full absolute top-2 left-2 rounded-lg" />
       <div
         style={{ fontFamily: "Constructio" }}
-        className="absolute md:bottom-16 bottom-24 md:left-48 left-20 font-Constructio  md:text-3xl text-sm text-blue-500"
+        className="absolute md:bottom-7 bottom-24 md:left-32 left-20 font-Constructio  md:text-2xl text-sm text-blue-500"
       >
         Today
       </div>
