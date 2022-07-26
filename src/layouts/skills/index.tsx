@@ -80,12 +80,12 @@ export const Skills: FC = () => {
               key={skill.title}
               style={{ top: index * 5 + "vh" }}
               className={classNames(
-                "md:border-4 border-2 md:p-4 m-2 md:h-20 h-10 bg-white transition-all duration-300 relative border-black rounded-lg"
+                "md:border-4 border-2 md:p-4 m-2 md:h-14 h-10 bg-white transition-all duration-300 relative border-black rounded-lg"
               )}
             >
               <div
                 style={{ zIndex: 100 }}
-                className="absolute md:top-5 top-2 left-2"
+                className="absolute md:top-2 top-2 left-2"
               >
                 {skill.title}
               </div>
@@ -116,12 +116,12 @@ export const Skills: FC = () => {
               key={skill.title}
               style={{ top: index * 5 + "vh" }}
               className={classNames(
-                "md:border-4 border-2 md:p-4 m-2 md:h-20 h-10 bg-white transition-all duration-300 relative border-black rounded-lg"
+                "md:border-4 border-2 md:p-4 m-2 md:h-14 h-10 bg-white transition-all duration-300 relative border-black rounded-lg"
               )}
             >
               <div
                 style={{ zIndex: 100 }}
-                className="absolute md:top-5 top-2 left-2"
+                className="absolute md:top-2 top-2 left-2"
               >
                 {skill.title}
               </div>
