@@ -72,7 +72,7 @@ body {
 
 #pulse_animation {
   animation: 1.5s ease-in-out pulseAnimation infinite;
-  box-shadow: 0 0 0 2em transparent;
+  box-shadow: 0 0 0 0.5rem transparent;
 }
 
 @keyframes pulseAnimation {
