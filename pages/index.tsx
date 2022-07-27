@@ -9,6 +9,7 @@ import {
   Experience,
   Github,
   Main,
+  Projects,
   Skills,
   SkillsMobile,
 } from "@layouts";
@@ -76,7 +77,7 @@ const Home: React.FC<PropType> = ({ contributions }) => {
         {/* <ParallaxLayer offset={2}> */}
         <Experience />
         {/* </ParallaxLayer> */}
-
+        <Projects />
         {/* <ParallaxLayer factor={4} offset={3}> */}
         {isMobile ? <SkillsMobile /> : <Skills />}
         {/* </ParallaxLayer> */}
