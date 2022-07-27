@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Uptoo - Mobile Application",
+    "content": "Created the Uptoo Jobs mobile application in 2020. It has over 300 daily users and its available on AppStore and Play Store.",
+    "techologies": ["React Native", "Node.js", "MongoDb"],
+    "link": "https://apps.apple.com/sa/app/uptoo-jobs-emploi-vente/id1465096273"
+  },
+  {
+    "title": "Uptoo - Web Scrapper",
+    "content": "Created a web scrapper to fetch as many as possible job offers on the internet. (2000 per weeks)",
+    "techologies": ["Puppeteer.js", "Elasticsearch", "Node.js", "Kibana", "Hubspot"],
+    "link": null
+  },
+  {
+    "title": "Uptoo - Uptoo.com Website",
+    "content": "I’ve worked on very different part of the Uptoo.com website using very different technologies",
+    "techologies": ["React.js", "Next.js", "Node.js", "MongoDb", "Redis"],
+    "link": "https://uptoo.fr"
+  },
+  {
+    "title": "Clinsearch EDClin.com",
+    "content": "Created the EDClin.com for the clinsearch company.",
+    "techologies": ["Angular 8", "PHP"],
+    "link": "https://edclin.com"
+  },
+  {
+    "title": "Side project - Split Website",
+    "content": "Collaborate on a reverse mentoring plateform named Split.",
+    "techologies": ["React", "Node.js", "MongoDB"],
+    "link": "https://github.com/AlexandreHoumeau/split-front"
+  }
+]

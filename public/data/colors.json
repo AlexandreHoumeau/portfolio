@@ -1,0 +1,50 @@
+[
+  {
+    "title": "React.js",
+    "color": "pink"
+  },
+  {
+    "title": "React Native",
+    "color": "pink"
+  },
+  {
+    "title": "Node.js",
+    "color": "amber"
+  },
+  {
+    "title": "MongoDb",
+    "color": "green"
+  },
+  {
+    "title": "Puppeteer.js",
+    "color": "cyan"
+  },
+  {
+    "title": "Elasticsearch",
+    "color": "rose"
+  },
+  {
+    "title": "Kibana",
+    "color": "indigo"
+  },
+  {
+    "title": "Next.js",
+    "color": "violet"
+  },
+  {
+    "title": "Redis",
+    "color": "purple"
+  },
+  {
+    "title": "Angular 8",
+    "color": "sky"
+  },
+  {
+    "title": "PHP",
+    "color": "fuchsia"
+  },
+  {
+    "title": "Hubspot",
+    "color": "fuchsia"
+  }
+]
