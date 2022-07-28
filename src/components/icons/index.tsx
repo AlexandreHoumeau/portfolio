@@ -13,3 +13,4 @@ export { default as CurvedLine } from "./curved-line";
 export { default as HtmlIcon } from "./htmlIcon";
 export { default as CssIcon } from "./cssIcon";
 export { default as MeIcon } from "./meIcon";
+export { default as LinkIcon } from './linkIcon'

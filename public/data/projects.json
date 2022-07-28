@@ -15,7 +15,7 @@
     "title": "Uptoo - Uptoo.com Website",
     "content": "I’ve worked on very different part of the Uptoo.com website using very different technologies",
     "techologies": ["React.js", "Next.js", "Node.js", "MongoDb", "Redis"],
-    "link": "https://uptoo.fr"
+    "link": "https://uptoo.fr/"
   },
   {
     "title": "Clinsearch EDClin.com",
@@ -26,7 +26,7 @@
   {
     "title": "Side project - Split Website",
     "content": "Collaborate on a reverse mentoring plateform named Split.",
-    "techologies": ["React", "Node.js", "MongoDB"],
+    "techologies": ["React.js", "Node.js", "MongoDb"],
     "link": "https://github.com/AlexandreHoumeau/split-front"
   }
 ]
