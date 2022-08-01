@@ -16,7 +16,9 @@ export const CookieModal = ({ closeModal = () => {} }: props) => {
     >
       <div className="backdrop-filter absolute z-0  backdrop-blur-sm w-full h-full flex justify-center" />
       <div className="bg-white z-40 md:w-[500px] w-[300px]  p-8 space-y-8 rounded-lg border-black border-4">
-        <Image src={cookie_img} />
+        <div className="flex justify-center md:px-20">
+          <Image className="w-20 object-contain" src={cookie_img} />
+        </div>
         <div
           style={{ fontFamily: "Constructio" }}
           className="text-3xl text-center"
@@ -24,7 +26,7 @@ export const CookieModal = ({ closeModal = () => {} }: props) => {
           Cookies!!
         </div>
         <div className="font-Courier text-center">
-          Hi! I'm using cookie on this website to track you down!!
+          Hi! I'm using cookie on this website!
         </div>
         <div className="flex justify-center rotate-[2deg]">
           <Button onClick={() => closeModal()} className="bg-amber-300">
