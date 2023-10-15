@@ -15,7 +15,6 @@ interface ContributionsType {
       }
     ];
     totalContributions: string;
-    // total: number;
   };
 }
 

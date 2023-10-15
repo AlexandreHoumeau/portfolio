@@ -6,26 +6,36 @@ import React, { FC, useState } from "react";
 interface PropType {
   contributions: {
     contributionCalendar: {
-      totalContributions: string,
+      totalContributions: string;
       weeks: [
         {
           firstDay: String;
-          contributionDays: [{
-            contributionLevel: String,
-            date: number
-          }];
+          contributionDays: [
+            {
+              contributionLevel: String;
+              date: number;
+            }
+          ];
         }
       ];
-    }
+    };
   };
 }
-
 
 export const Github: FC<PropType> = ({ contributions }) => {
   const [update, setUpdate] = useState(false);
 
   const changeSize = (size: boolean) => {
     setUpdate(size);
+  };
+
+  const handleOnClick = (link?: string, origin?: string) => {
+    window.open(link, "_blank");
+    window?.gtag("event", `click_button_${origin}`, {
+      params: {
+        origin,
+      },
+    });
   };
 
   return (
@@ -55,7 +65,14 @@ export const Github: FC<PropType> = ({ contributions }) => {
             <br /> you my commits over the past year.
           </div>
           <div className="rotate-2 flex xl:justify-start justify-center">
-            <Button className="bg-amber-300">My Github</Button>
+            <Button
+              onClick={() =>
+                handleOnClick("https://github.com/AlexandreHoumeau", "github")
+              }
+              className="bg-amber-300"
+            >
+              My Github
+            </Button>
           </div>
         </div>
       </div>
