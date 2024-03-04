@@ -1,7 +1,6 @@
 const sgMail = require("@sendgrid/mail");
 const fs = require("fs");
-import path from 'path'
-import getConfig from 'next/config'
+import getConfig from 'next/config';
 const { serverRuntimeConfig } = getConfig()
 
 // function base64_encode(file: any) {
@@ -35,16 +34,15 @@ export default function handler(req: any, res: any) {
         to: "alexandre.houmeau@gmail.com", // Change to your recipient
         from: "contact@alexandre-houmeau.com", // Change to your verified sender
         subject: "New visitor on you website",
-        html: `<p>List of informations:</p>
+        html: `<p>Informations:</p>
           <ul>
             <li>name: ${name}</li>
             <li>email: ${email}</li>
             <li>comment: ${comment ? comment : "none"}</li>
             ${role && `<li>role ${role}</li>`}
-            ${quality && `<li>He think your website is ${quality}</li>`}
+            ${quality && `<li>Webiste quality: ${quality}</li>`}
           </ul>
           <br/>
-          <strong>You can do this I believe in you!!</strong>
         `,
       },
     ];

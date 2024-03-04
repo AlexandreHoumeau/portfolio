@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import project_data from "public/data/projects.json";
-import color_data from "public/data/colors.json";
-import classNames from "classnames";
 import { GithubIcon, LinkIcon } from "@components/icons";
-import { AnimatePresence, motion } from "framer-motion";
+import classNames from "classnames";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import color_data from "public/data/colors.json";
+import project_data from "public/data/projects.json";
+import { useState } from "react";
 
 export const Projects = () => {
   const [hover, setHover] = useState<number | null>(null);
@@ -17,9 +18,9 @@ export const Projects = () => {
     }
 
     return (
-      <a href={project.link} target="_blank">
+      <Link legacyBehavior href={project.link} target="_blank">
         {linkIsGithub ? <GithubIcon className="text-3xl" /> : <LinkIcon />}
-      </a>
+      </Link>
     );
   };
   const renderLabel = (techno: string, index: number) => {

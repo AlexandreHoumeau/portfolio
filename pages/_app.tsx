@@ -4,7 +4,7 @@ import Head from "next/head";
 import { RecoilRoot } from "recoil";
 import "tailwindcss/tailwind.css";
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function MyApp({ Component, pageProps }: any): JSX.Element {
   return (
     <RecoilRoot>
       <Head>

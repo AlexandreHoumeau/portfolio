@@ -24,7 +24,7 @@ export const Experience: FC = () => {
             className="z-50 lg:block hidden absolute rotate-12"
           >
             <div className="absolute -left-[25%] -rotate-3">
-              <Image width={150} height={150} src={PuppeteerLogo} />
+              <Image alt="puperteer-logo" width={150} height={150} src={PuppeteerLogo} />
             </div>
           </ParallaxLayer>
 
@@ -34,7 +34,7 @@ export const Experience: FC = () => {
             className="z-50 lg:block hidden absolute rotate-12"
           >
             <div className="absolute bottom-10 right-[10%] rotate-12">
-              <Image width={200} height={200} src={UptooLogoCoin} />
+              <Image alt="uptoo-logo" width={200} height={200} src={UptooLogoCoin} />
             </div>
           </ParallaxLayer>
 
@@ -45,6 +45,7 @@ export const Experience: FC = () => {
           >
             <div className="absolute left-10 ">
               <Image
+                alt="elasticsearch-logo"
                 className=""
                 width={100}
                 height={100}

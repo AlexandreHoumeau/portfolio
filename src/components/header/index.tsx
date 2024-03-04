@@ -38,13 +38,13 @@ export const Header: React.FC = () => {
         </IconButton>
       </div>
       <div className="flex justify-end md:space-x-4 space-x-2">
-        <Link href="#about">
+        <Link legacyBehavior href="#about">
           <a>
             <RoundedButton className="md:tracking-widest">about</RoundedButton>
           </a>
         </Link>
 
-        <Link href="#contact">
+        <Link legacyBehavior href="#contact">
           <a>
             <RoundedButton className="md:tracking-widest">
               contact

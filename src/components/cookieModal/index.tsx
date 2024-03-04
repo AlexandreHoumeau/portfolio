@@ -17,7 +17,7 @@ export const CookieModal = ({ closeModal = () => {} }: props) => {
       <div className="backdrop-filter absolute z-0  backdrop-blur-sm w-full h-full flex justify-center" />
       <div className="bg-white z-40 md:w-[500px] w-[300px]  p-8 space-y-8 rounded-lg border-black border-4">
         <div className="flex justify-center md:px-20">
-          <Image className="w-20 object-contain" src={cookie_img} />
+          <Image alt="cookie_img" className="w-20 object-contain" src={cookie_img} />
         </div>
         <div
           style={{ fontFamily: "Constructio" }}

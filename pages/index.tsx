@@ -12,6 +12,7 @@ import {
   Projects,
   Skills,
   SkillsMobile,
+  Timeline,
 } from "@layouts";
 import { Parallax } from "@react-spring/parallax";
 import { isMobile } from "react-device-detect";
@@ -73,6 +74,7 @@ const Home: React.FC<PropType> = ({ contributions }) => {
 
         {/* <ParallaxLayer offset={1}> */}
         <AboutMe />
+        {/* <Timeline /> */}
         {/* </ParallaxLayer> */}
         {/* <ParallaxLayer offset={2}> */}
         <Experience />
@@ -82,7 +84,7 @@ const Home: React.FC<PropType> = ({ contributions }) => {
         {isMobile ? <SkillsMobile /> : <Skills />}
         {/* </ParallaxLayer> */}
         {/* <ParallaxLayer offset={6}> */}
-        <Github contributions={contributions} />
+        {/* <Github contributions={contributions} /> */}
 
         {isMobile ? <ContactMobile /> : <Contact />}
 

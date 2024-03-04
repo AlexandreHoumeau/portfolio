@@ -23,7 +23,7 @@ export const Main: FC = () => {
             <br />scroll down to learn more about me!
           </div>
           <div className="flex md:justify-end justify-center items-end md:space-x-10 mt-10">
-            <Link href="#contact">
+            <Link legacyBehavior href="#contact">
               <a>
                 <Button className="bg-amber-300">Contact me</Button>
               </a>
@@ -49,13 +49,13 @@ export const Main: FC = () => {
           id="clouds"
           className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-20 right-5 sm:right-20"
         >
-          <Image src={clouds} />
+          <Image alt="clouds" src={clouds} />
         </div>
         <div
           id="clouds2"
           className="absolute w-1/6 bottom-56 md:bottom-40 left-10 md:-left-10"
         >
-          <Image src={clouds} />
+          <Image alt="clouds" src={clouds} />
         </div>
 
         <div className=" flex z-[0] lg:mx-0 md:mx-48 sm:mx-0 items-end">

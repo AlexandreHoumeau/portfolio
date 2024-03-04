@@ -16,13 +16,13 @@ export const AboutMe: FC = () => {
           id="clouds"
           className="absolute z-10 rotate-12 w-1/6 sm:top-40 top-0  right-5 sm:right-20"
         >
-          <Image src={clouds} />
+          <Image alt="clouds" src={clouds} />
         </div>
         <div
           id="clouds2"
           className="absolute z-10 w-1/12 sm:bottom-40 bottom-0  left-1 sm:left-5"
         >
-          <Image src={clouds} />
+          <Image alt="clouds2" src={clouds} />
         </div>
         <div className="space-y-8 w-4/5">
           <div
@@ -72,7 +72,7 @@ export const AboutMe: FC = () => {
           <MeIcon className="md:scale-[2] absolute -left-20  rotate-[30deg]" />
         </ParallaxLayer>
         <div className="relative z-10">
-          <Image className="z-10" src={mockup_desktop_me} />
+          <Image alt="alexandre-houmeau-photo" className="z-50 relative" src={mockup_desktop_me} />
           <div className="absolute w-full h-full top-1 left-2 z-0 rounded-lg bg-black" />
         </div>
       </div>
