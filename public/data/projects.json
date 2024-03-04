@@ -1,5 +1,10 @@
 [
   {
+    "title": "Installer App - Shell Recharge Solution",
+    "content": "Installer App is a mobile application that helps electricians to install and configure charge points.",
+    "techologies": ["React Native", "GraphQl"]
+  },
+  {
     "title": "Uptoo - Mobile Application",
     "content": "Created the Uptoo Jobs mobile application in 2020. It has over 300 daily users and its available on AppStore and Play Store.",
     "techologies": ["React Native", "Node.js", "MongoDb"],

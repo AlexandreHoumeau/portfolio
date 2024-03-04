@@ -19,8 +19,8 @@ export const Main: FC = () => {
             <br /> a Web Developer
           </div>
           <div className="font-Courier xl:text-xl text-lg">
-            I have 3 years of exp.. You really
-            <br /> should scroll to learn more about me!
+            I have 5 years of exp.. You should
+            <br />scroll down to learn more about me!
           </div>
           <div className="flex md:justify-end justify-center items-end md:space-x-10 mt-10">
             <Link href="#contact">

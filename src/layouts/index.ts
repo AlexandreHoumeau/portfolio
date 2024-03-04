@@ -7,3 +7,4 @@ export { SkillsMobile } from './skills/index.mobile'
 export { Contact } from './contact'
 export { ContactMobile } from './contact/index.mobile'
 export { Projects } from './projects'
+export { Timeline } from "./timeline";

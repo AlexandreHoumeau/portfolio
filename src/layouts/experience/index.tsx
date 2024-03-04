@@ -1,4 +1,4 @@
-import { ExperienceMap } from "@components/expericen-map";
+import { ExperienceMap } from "@components/experience-map";
 import { ParallaxLayer } from "@react-spring/parallax";
 import Image from "next/image";
 import ElasticLogoCoin from "public/images/elastic_logo_coin.png";
@@ -62,12 +62,11 @@ export const Experience: FC = () => {
 
         <div className="font-Courier 2xl:w-2/3 space-y-4 md:text-xl text-sm md:mt-0 mt-4  2xl:text-left text-center">
           <div>
-            I have 3 years of experience as a full stack developer essentially
-            working with Javascript and its environment.
+            I have 5 years of experience as a full stack developer essentially
+            working with Typescript and its frameworks.
           </div>
           <div>
-            Since 2019 I’ve been working as a full stack developer in the
-            leading French recruiting firm, Uptoo.
+            Since 2022 I’ve been working as a Software Engineer at Shell Recharge Solution.
           </div>
         </div>
       </div>

@@ -33,14 +33,15 @@ export const AboutMe: FC = () => {
           </div>
           <div className="font-Courier space-y-4 lg:text-left text-center text-base md:text-xl">
             <div>
-              and I’m a 25 years old web developer living in Paris. I’m actually
-              from Bordeaux, a small city in the south west of France,
-              well-known for its wine (but you may have heard about it).
+              Hi there! I'm a 27-year-old full-stack web developer currently
+              residing in Amsterdam, originally from Bordeaux, France – yes, the
+              one renowned for its wine.
             </div>
             <div className="sm:block hidden">
-              Before falling in love with web development I was studying to become a Sound Engineer! I used to play instruments and compose music
-              with dedicated softwares. I then tried to understand how those
-              softwares were made and that’s when I started to code on my own.
+              Before diving into web development, I was on track to become a
+              Sound Engineer. Music composition and exploring software
+              intricacies were my jam. This curiosity sparked my journey into
+              coding.
             </div>
           </div>
         </div>
