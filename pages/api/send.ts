@@ -16,20 +16,20 @@ export default function handler(req: any, res: any) {
 
   if (req.method === "POST" && email) {
     const msg = [
-      {
-        to: email, // Change to your recipient
-        from: "contact@alexandre-houmeau.com", // Change to your verified sender
-        templateId: "d-b2c8ac2fb3174c72b0f5a7d1101783c2",
-        // attachments: [
-        //   {
-        //     filename: `my_resume`,
-        //     content: data_base64,
-        //     type: 'application/pdf',
-        //     disposition: 'attachment'
-        //   }
-        //  ]
+      // {
+      //   to: email, // Change to your recipient
+      //   from: "contact@alexandre-houmeau.com", // Change to your verified sender
+      //   templateId: "d-e477c53d97d146799ddcf57fc46503a5",
+      //   // attachments: [
+      //   //   {
+      //   //     filename: `my_resume`,
+      //   //     content: data_base64,
+      //   //     type: 'application/pdf',
+      //   //     disposition: 'attachment'
+      //   //   }
+      //   //  ]
         
-      },
+      // },
       {
         to: "alexandre.houmeau@gmail.com", // Change to your recipient
         from: "contact@alexandre-houmeau.com", // Change to your verified sender
